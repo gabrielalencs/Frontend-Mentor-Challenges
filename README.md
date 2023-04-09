@@ -43,4 +43,4 @@ De forma geral estou satisfeito com o resultado do projeto, mas quero sempre evo
 ## Deploy 🔥
  
 Para realizar o deploy da minha aplicação, utilizei a própria ferramenta de hospedagem do GitHub, o **GitHub Pages**
-[Clique Aqui](url) para visualizar a aplicação.
+[Clique Aqui](https://gabrielalencarr/Frontend-Mentor-Challenges/Fylo Landing Page) para visualizar a aplicação.
