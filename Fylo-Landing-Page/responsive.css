@@ -17,7 +17,8 @@
         font-size: 19px;
     }
 
-    .main__input-control, .main__btn {
+    .main__input-control,
+    .main__btn {
         width: 300px;
     }
 
