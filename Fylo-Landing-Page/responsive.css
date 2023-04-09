@@ -21,6 +21,10 @@
         width: 300px;
     }
 
+    .main__input-control:focus~.input-highlight {
+        width: 300px;
+    }
+
     .main__section-three .main__text {
         padding: 20px 20px 40px;
         font-size: 14px;
