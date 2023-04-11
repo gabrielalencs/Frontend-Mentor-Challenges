@@ -37,8 +37,6 @@ Essa foi minha segunda landing page mais próxima de uma aplicação real, entã
 - **Mobile First** : É um modelo que prioriza o desenvolvimento da aplicação primeiramente em dispositivos móveis, e em seguida adaptamos para as demais resoluções. Já tenho a boa prática de usar esse padrão nas minhas aplicações mas ainda quero melhorar. 
 
 De forma geral estou satisfeito com o resultado do projeto, mas quero sempre evoluir nas boas práticas e padrões, quero buscar sempre aprender novas tecnologias e conceitos para me manter em uma evolução constante como profissional.
-### Estou aberto a críticas e sugestões sobre o código desenvolvido 👇🏼
-
 
 ## Deploy 🔥
  
