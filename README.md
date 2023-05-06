@@ -14,4 +14,4 @@ Além disso, o Frontend Mentor também oferece uma comunidade ativa de desenvolv
 
 ## 🚀 Desafios concluídos (até o momento)
 
-- <a href= "https://gabrielalencarr.github.io/Frontend-Mentor-Challenges/Fylo-Landing-Page/">Fylo Landing Page </a>
+- <a href= "https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Fylo-Landing-Page/">Fylo Landing Page </a>
