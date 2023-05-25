@@ -1,0 +1,63 @@
+@use 'modules-mixins' as mix;
+@use '../base/variables' as var;
+@use '../base/base-mixins';
+
+.courses__popular {
+    @include mix.styles-card-courses($height: 150px);
+    background: var.$primary-gradient;
+    padding: 40px 50px 50px 30px;
+
+    @include base-mixins.desktop {
+        width: 300px;
+        height: 250px;
+    }
+
+    .popular__text {
+        color: white;
+        font-weight: bolder;
+        font-size: 23px;
+        text-align: center;
+
+        @include base-mixins.tablet {
+            font-size: 35px;
+        }
+
+        @include base-mixins.desktop {
+            text-align: left;
+            font-size: 30px;
+        }
+    }
+}
+
+.courses__card {
+    position: relative;
+    @include mix.styles-card-courses;
+    @include base-mixins.desktop {
+        width: 300px;
+    }
+
+    .card__icon {
+        position: absolute;
+        top: -25px;
+    }
+
+    .card__title {
+        padding-top: 50px;
+    }
+
+    .card__text {
+        padding-top: 15px;
+        line-height: 1.5;
+    }
+
+    .card__link {
+        display: inline-block;
+        padding-top: 10px;
+        transition: all .3s ease;
+
+        &:hover {
+            color: var.$link-color-hover;
+        }
+    }
+}
+

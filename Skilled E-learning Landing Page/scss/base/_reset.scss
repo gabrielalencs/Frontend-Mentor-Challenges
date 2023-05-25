@@ -1,0 +1,29 @@
+@use 'variables' as var;
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+    background: var.$body-gradient;
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    color: var.$primary-color;
+}
+
+p {
+    color: var.$txt-color;
+}
+
+a {
+    text-decoration: none;
+    color: var.$link-color;
+    font-weight: bolder;
+}

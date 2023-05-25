@@ -1,0 +1,23 @@
+@use '../base/base-mixins' as mix;
+
+.courses {
+    @include mix.tablet {
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
+}
+
+.group__card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    @include mix.desktop {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 15px;
+    }
+}

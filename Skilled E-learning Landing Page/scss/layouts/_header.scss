@@ -1,0 +1,28 @@
+@use '../base/base-mixins' as mix;
+@use '../base/variables' as var;
+@use 'layouts-mixins';
+
+.header {
+    @include layouts-mixins.alignment-items;
+    margin: 30px 30px 0;
+
+    @include mix.tablet {
+        padding: 0 30px;
+        margin: 20px auto 0;
+        max-width: 950px;
+    }
+
+    .brand__logo {
+        width: 130px;
+
+        @include mix.tablet {
+            width: 100px;
+        }
+    }
+
+    .btn__primary {
+        @include mix.mobile-pp {
+            display: none;
+        }
+    }
+}
