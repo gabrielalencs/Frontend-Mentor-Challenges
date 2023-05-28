@@ -1,0 +1,139 @@
+@use '../base/variables' as var;
+@use '../base/base-mixins' as mix;
+
+.main {
+    padding: 70px 0 0 20px;
+    background-image: url(../images/pattern-curved-line-1.svg);
+    background-repeat: no-repeat;
+    background-size: 150px 30px;
+    background-position: 170px 37px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+
+    @include mix.tablet {
+        grid-template-rows: repeat(2, 0.5fr);
+        grid-template-columns: repeat(2, 1fr);
+        background-position: 200px 130px;
+    }
+
+    @include mix.desktop {
+        background-position: 200px 130px;
+        grid-template-columns: repeat(2, 1fr) 0.5fr;
+    }
+
+    .main__informations {
+        @include mix.tablet {
+            grid-column: 1 / 2;
+            position: absolute;
+            margin-top: 100px;
+        }
+
+        @include mix.desktop {
+            padding: 0;
+            grid-column: 1;
+        }
+
+        &-title {
+            font-size: 40px;
+            line-height: 1.2;
+
+            @include mix.tablet {
+                font-size: 55px;
+                padding-right: 200px;
+            }
+
+            @include mix.desktop {
+                font-size: 60px;
+                padding-right: 450px;
+            }
+        }
+
+        &-text {
+            font-size: 18px;
+            padding: 30px 30px 25px 0;
+            color: var.$txt-color-primary;
+            line-height: 1.5;
+
+            @include mix.tablet {
+                font-size: 19px;
+                padding-right: 450px;
+            }
+
+            @include mix.desktop {
+                padding-right: 700px;
+            }
+        }
+    }
+
+    .main__image {
+        width: 95%;
+        margin-top: 30px;
+        background-image: url(../images/image-hero-landscape.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 20px;
+
+        @include mix.tablet {
+            background-image: none;
+            text-align: center;
+            width: 100%;
+            grid-column: 2 / 4;
+            margin-top: 0;
+        }
+
+        @include mix.desktop {
+            grid-column: 2;
+        }
+
+        .main__image-cover {
+            display: none;
+        }
+
+        @include mix.tablet {
+
+            .main__image-cover {
+                display: inline-block;
+                height: 500px;
+                width: 85%;
+            }
+        }
+    }
+
+    .main__numbers {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+        @include mix.tablet {
+            flex-direction: row;
+            justify-content: space-around;
+            grid-row: 2;
+            grid-column: -7 / -1;
+        }
+
+        @include mix.desktop {
+            grid-column: 3;
+            grid-row: 1;
+            flex-direction: column;
+        }
+
+        &-item {
+            text-align: center;
+            text-transform: uppercase;
+
+            .main__numbers-value {
+                font-size: 40px;
+                font-weight: bold;
+                padding-bottom: 5px;
+            }
+    
+            .main__numbers-label {
+                color: var.$txt-color-primary;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}

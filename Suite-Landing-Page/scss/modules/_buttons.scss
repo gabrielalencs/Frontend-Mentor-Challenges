@@ -1,0 +1,30 @@
+@use '../base/variables' as var;
+
+.btn {
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bolder;
+    border: 1.5px solid var.$primary-color;
+    font-size: 15px;
+    transition: all .2s ease;
+}
+
+.btn__white {
+    background-color: white;
+
+    &:hover {
+        background-color: var.$primary-color;
+        color: white;
+    }
+}
+
+.btn__dark {
+    border: none;
+    background-color: var.$primary-color;
+    color: white;
+
+    &:hover {
+        background-color: var.$hover-primary-color;
+    }
+}
