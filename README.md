@@ -14,4 +14,6 @@ Além disso, o Frontend Mentor também oferece uma comunidade ativa de desenvolv
 
 ## 🚀 Desafios concluídos (até o momento)
 - <a href="https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Skilled E-learning Landing Page/">Skilled E-learning Landing Page</a>
+<a href="https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Suite-Landing-Page/">Suite Landing Page</a>
 - <a href= "https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Fylo-Landing-Page/">Fylo Landing Page </a>
+
