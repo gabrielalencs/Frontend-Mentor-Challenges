@@ -1,0 +1,63 @@
+@use 'layout-utilities';
+@use '../base/media-queries' as media;
+
+.main {
+    @include media.medium {
+        display: flex;
+    }
+
+    @include media.x-large {
+        margin: 0 70px 0;
+    }
+
+    .main__content {
+        margin: 50px 0 0 30px;
+
+        @include media.medium {
+            width: calc(100% / 2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .main__title {
+            font-size: 45px;
+        }
+
+        .main__description {
+            margin: 25px 20px 0 0;
+            font-size: 20px;
+        }
+
+        .main__actions {
+            margin-top: 30px;
+            max-width: 350px;
+            @include layout-utilities.flex-alignment;
+
+            .main__release-date {
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .main__image-container {
+        width: 100%;
+        height: 500px;
+        background-image: url(../images/image-keyboard-mobile.jpg);
+        @include layout-utilities.alignment-bg;
+        border-radius: 30px;
+        margin: 50px 0 0 30px;
+
+        @include media.medium {
+            width: calc(100% / 2);
+            background-image: url(../images/image-keyboard-tablet.jpg);
+        }
+
+        @include media.x-large {
+            position: relative;
+            right: -50px;
+            background-image: url(../images/image-keyboard-desktop.jpg);
+        }
+    }
+}

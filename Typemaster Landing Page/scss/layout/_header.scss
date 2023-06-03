@@ -1,0 +1,11 @@
+@use 'layout-utilities';
+@use '../base/media-queries' as media;
+
+.header {
+    @include layout-utilities.flex-alignment;
+    margin: 30px 30px 0;
+
+    @include media.x-large {
+        margin: 30px 100px 0;
+    }
+}

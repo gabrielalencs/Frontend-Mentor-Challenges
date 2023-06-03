@@ -1,0 +1,97 @@
+@use '../base/variables' as var;
+@use '../base/media-queries' as media;
+@use 'layout-utilities';
+
+.keyboard-info {
+    margin: 30px 30px 0 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 95%;
+
+    @include media.medium {
+        margin: 30px 0 0 50px;
+    }
+
+    @include media.x-large {
+        grid-template-columns: 1fr 1.5fr 1fr;
+        margin: 50px 120px 0;
+    }
+
+    .keyboard-info__image--one {
+        background-image: url(../images/image-glass-and-keyboard-tablet.jpg);
+        @include layout-utilities.alignment-bg;
+        grid-column: 2 / 3;
+
+        @include media.medium {
+            width: 90%;
+        }
+
+        @include media.x-large {
+            height: 400px;
+        }
+    }
+
+    .keyboard-info__image--two {
+        background-image: url(../images/image-phone-and-keyboard-mobile.jpg);
+        @include layout-utilities.alignment-bg;
+        grid-column: 1 / 2;
+        grid-row: -5 / -2;
+        position: relative;
+        left: -20px;
+
+        @include media.x-large {
+            height: 400px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: var.$bg-container;
+            border-radius: 10px;
+        }
+    }
+
+    .keyboard-info__content {
+        grid-row: 3;
+        grid-column: -4 / -1;
+        text-align: center;
+        margin-top: 30px;
+        
+        @include media.medium {
+            @include layout-utilities.flex-alignment;
+            gap: 40px;
+            text-align: left;
+        }
+
+        @include media.x-large {
+            flex-direction: column;
+            grid-row: -5 / -2;
+            grid-column: 3;
+            margin-top: 0;
+            margin-right: 100px;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .keyboard-info__title {
+            font-size: 35px;
+            margin: 0 50px;
+
+            @include media.medium {
+                margin: 0;
+            }
+        }
+
+        .keyboard-info__description {
+            margin: 20px 45px;
+            font-size: 20px;
+
+            @include media.x-large {
+                margin: 0;
+            }
+        }
+    }
+}

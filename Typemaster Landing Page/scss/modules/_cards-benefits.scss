@@ -1,0 +1,34 @@
+@use '../base/variables' as var;
+@use '../base/media-queries' as media;
+
+.keyboard-benefits__card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    @include media.medium {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .keyboard-benefits__around {
+        width: 50px;
+        height: 50px;
+        background-color: var.$secondary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .keyboard-benefits__title {
+        font-size: 23px;
+        margin: 30px 0 0;
+    }
+
+    .keyboard-benefits__description {
+        margin: 15px 0;
+    }
+}
