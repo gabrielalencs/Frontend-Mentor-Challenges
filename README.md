@@ -12,11 +12,23 @@ Os desafios do <a href ="https://www.frontendmentor.io">Frontend Mentor</a> são
 ## 🤝 Comunidade do Frontend Mentor
 Além disso, o Frontend Mentor também oferece uma comunidade ativa de desenvolvedores, onde os usuários podem compartilhar seus projetos, obter feedback de outros desenvolvedores e se conectar com pessoas com interesses semelhantes. A plataforma também oferece uma seção de recursos com tutoriais, artigos e ferramentas para ajudar os desenvolvedores a aprimorar suas habilidades.
 
-## 🚀 Desafios concluídos (até o momento)
+## 🚀 Desafios concluídos
 
 - <a href= "https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Typemaster Landing Page/">Typemaster Landing Page</a>
 - <a href="https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Skilled E-learning Landing Page/">Skilled E-learning Landing Page</a>
 - <a href="https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Suite-Landing-Page/">Suite Landing Page</a>
 - <a href= "https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Fylo-Landing-Page/">Fylo Landing Page </a>
 
+|Dificuldade | |
+|---|---|
+| Novato | :star: |
+| Júnior | :star: :star: |
+| Intermediário | :star: :star: :star:  |
+| Avançado | :star: :star: :star: :star: :star: |
+| Guru | :star: :star: :star: :star: :star: :star: |
 
+|Name|Difficulty| Technologies / Approaches |
+|---|---|---|
+|  [Typemaste Landing Page](https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Typemaster%20Landing%20Page/) | :star:   | HTML, CSS, JS |
+|  [Base Apparel Coming Soon](https://mesutcifci.github.io/Frontend-Mentor-Challenges/base-apparel-coming-soon-master/index.html) | :star:   | HTML, SCSS, JS |
+|  [Coding Bootcamp Testimonials Slider](https://mesutcifci.github.io/Frontend-Mentor-Challenges/coding-bootcamp-testimonials-slider-master/index.html) | :star:   | HTML, CSS, JS |
