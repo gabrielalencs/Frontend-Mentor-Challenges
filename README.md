@@ -26,7 +26,7 @@ Além disso, o Frontend Mentor também oferece uma comunidade ativa de desenvolv
 | Avançado | :star: :star: :star: :star: :star: |
 | Guru | :star: :star: :star: :star: :star: :star: |
 
-|Name|Difficulty| Technologies / Approaches |
+|Nome|Dificuldade| Tecnologias / Conceitos |
 |---|---|---|
 |  [Skilled E-learning Landing Page](https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Skilled%20E-learning%20Landing%20Page/) | :star:  | HTML, CSS, SCSS, SMACSS |
 |  [Fylo Landing Page](https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Fylo-Landing-Page/) | :star: :star:  | HTML, CSS|
