@@ -22,9 +22,9 @@ Além disso, o Frontend Mentor também oferece uma comunidade ativa de desenvolv
 | Avançado | :star: :star: :star: :star: :star: |
 | Guru | :star: :star: :star: :star: :star: :star: |
 
-|Nome|Dificuldade| Tecnologias / Conceitos |
-|---|---|---|
-|  [Skilled E-learning Landing Page](https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Skilled%20E-learning%20Landing%20Page/) | :star:  | HTML, CSS, SCSS, SMACSS, MOBILE FIRST |
-|  [Fylo Landing Page](https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Fylo-Landing-Page/) | :star: :star:  | HTML, CSS|
-|  [Typemaster Landing Page](https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Typemaster%20Landing%20Page/) | :star: :star:  | HTML, CSS, SCSS, SMACSS, MOBILE FIRST |
-|  [Suite Landing Page](https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Suite-Landing-Page/) | :star: :star:  | HTML, CSS, SCSS, SMACSS, MOBILE FIRST |
+|Nome|Repositório|Dificuldade| Tecnologias / Conceitos |
+|---|---|---|---|
+|  [Skilled E-learning Landing Page](https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Skilled%20E-learning%20Landing%20Page/) |[Repositório do projeto](https://github.com/gabrielalencs/Frontend-Mentor-Challenges/tree/main/Skilled%20E-learning%20Landing%20Page)| :star:  | HTML, CSS, SCSS, SMACSS, MOBILE FIRST |
+|  [Fylo Landing Page](https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Fylo-Landing-Page/) |[Repositório do projeto](https://github.com/gabrielalencs/Frontend-Mentor-Challenges/tree/main/Fylo-Landing-Page) | :star: :star:  | HTML, CSS|
+|  [Typemaster Landing Page](https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Typemaster%20Landing%20Page/)|[Repositório do projeto(https://github.com/gabrielalencs/Frontend-Mentor-Challenges/tree/main/Typemaster%20Landing%20Page)] | :star: :star:  | HTML, CSS, SCSS, SMACSS, MOBILE FIRST |
+|  [Suite Landing Page](https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Suite-Landing-Page/)|[Repositório do projeto](https://github.com/gabrielalencs/Frontend-Mentor-Challenges/tree/main/Suite-Landing-Page) | :star: :star:  | HTML, CSS, SCSS, SMACSS, MOBILE FIRST |
