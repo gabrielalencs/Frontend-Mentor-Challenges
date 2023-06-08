@@ -1,0 +1,37 @@
+.footer {
+    background-color: #68B1A2;
+
+    .footer__logo {
+        filter: brightness(0) saturate(100%) invert(23%) sepia(59%) saturate(288%) hue-rotate(117deg) brightness(98%) contrast(86%);
+        width: 150px;
+        margin-bottom: 2rem;
+        margin-top: 4rem;
+    }
+
+    .footer__nav-item {
+        font-weight: 600;
+        font-size: 20px;
+        list-style: none;
+
+        .footer__nav-link {
+            color: #2f5c52;
+            transition: all .3s ease;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+
+    .footer__social-media {
+        margin: 4rem 0;
+    }
+
+    &__icon-social-media {
+        transition: all .3s ease;
+
+        &:hover {
+            filter: brightness(0) saturate(100%) invert(99%) sepia(1%) saturate(0%) hue-rotate(170deg) brightness(103%) contrast(100%);
+        }
+    }
+}
