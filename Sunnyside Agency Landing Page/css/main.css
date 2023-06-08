@@ -128,6 +128,7 @@ body {
 
 .feature .feature__informations-article {
   padding: 50px 60px 40px;
+  background: hsla(42, 92%, 90%, 0.192);
 }
 .feature .feature__article {
   font-weight: bolder;
