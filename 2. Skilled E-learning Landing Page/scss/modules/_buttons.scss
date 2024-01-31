@@ -1,0 +1,37 @@
+@use '../base/variables' as var;
+
+.btn {
+    border: none;
+    padding: 12px 20px;
+    color: var.$white;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn__primary {
+    background-color: var.$primary-color;
+
+    &:hover {
+        background-color: var.$primary-color-hover;
+    }
+}
+
+.btn__gradient--main {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: var.$primary-gradient;
+
+    &:hover {
+        background: var.$btn-hover-primary;
+    }
+}
+
+.btn__gradient--footer {
+    background: var.$secondary-gradient;
+
+    &:hover {
+        background: var.$btn-hover-secondary;
+    }
+}

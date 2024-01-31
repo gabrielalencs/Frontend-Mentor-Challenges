@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: hsl(235, 18%, 26%);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.error {
+  background-color: #FFE7E6;
+  color: #FF6257;
+  border: 1px solid #FFA49E !important;
+}
+
+.card-sign-up {
+  background-color: rgb(255, 255, 255);
+  max-width: 490px;
+  margin: 0 auto 20px;
+  border-radius: 30px;
+}
+@media (min-width: 1110px) {
+  .card-sign-up {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1067px;
+    border-radius: 30px;
+    padding: 30px;
+  }
+}
+.card-sign-up .sing-up-img-mobile {
+  width: 100%;
+}
+@media (min-width: 1110px) {
+  .card-sign-up .sing-up-img-mobile {
+    display: none;
+  }
+}
+.card-sign-up .sing-up-img-desktop {
+  display: none;
+}
+@media (min-width: 1110px) {
+  .card-sign-up .sing-up-img-desktop {
+    display: block;
+  }
+}
+
+.sign-up-texts {
+  color: rgb(36, 39, 66);
+  padding: 25px 25px 35px;
+}
+@media (min-width: 1110px) {
+  .sign-up-texts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+  }
+}
+.sign-up-texts h2 {
+  font-size: 40px;
+}
+@media (min-width: 1110px) {
+  .sign-up-texts h2 {
+    font-size: 56px;
+  }
+}
+.sign-up-texts p:not(.sign-up-list p) {
+  margin-top: 20px;
+  max-width: 400px;
+}
+.sign-up-texts .sign-up-list {
+  margin-top: 30px;
+  list-style-type: none;
+}
+.sign-up-texts .sign-up-list .list-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.sign-up-form {
+  margin-top: 30px;
+}
+.sign-up-form label,
+.sign-up-form .message-error {
+  font-weight: bold;
+}
+.sign-up-form .form-group {
+  display: flex;
+  justify-content: space-between;
+}
+.sign-up-form .message-error {
+  color: rgb(255, 98, 87);
+}
+.sign-up-form input,
+.sign-up-form button {
+  display: block;
+  width: 100%;
+  padding: 18px;
+}
+.sign-up-form #input-email {
+  margin-top: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid #9294A0;
+  font-size: 18px;
+}
+.sign-up-form #input-email::placeholder {
+  font-size: 16px;
+}
+.sign-up-form #input-email:focus {
+  outline: 2px dotted rgb(36, 39, 66);
+}
+
+.btn {
+  border: none;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: rgb(36, 39, 66);
+  margin-top: 15px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-image: linear-gradient(to right, #FF427E, #FD5E50);
+  box-shadow: 0 8px 20px rgba(255, 66, 126, 0.5568627451);
+}
+
+.card-sucess {
+  background-color: rgb(255, 255, 255);
+  max-width: 530px;
+  margin: 0 auto;
+  border-radius: 0 0 30px 30px;
+  color: rgb(36, 39, 66);
+  padding: 20px;
+}
+@media (min-width: 1110px) {
+  .card-sucess {
+    border-radius: 30px;
+    padding: 70px;
+  }
+}
+.card-sucess .card-icon {
+  height: 60px;
+}
+.card-sucess h2 {
+  margin-top: 20px;
+  font-size: 40px;
+}
+@media (min-width: 1110px) {
+  .card-sucess h2 {
+    font-size: 56px;
+  }
+}
+.card-sucess p {
+  margin-top: 30px;
+  line-height: 24px;
+}
+.card-sucess p span {
+  font-weight: bold;
+}
+.card-sucess .dismiss-button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 18px;
+}
+
+/*# sourceMappingURL=app.css.map */

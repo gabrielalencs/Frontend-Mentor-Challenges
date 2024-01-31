@@ -1,0 +1,129 @@
+@use '../base/breakpoints' as media;
+
+.s-highlight {
+    background-color: #111111;
+    color: #FFFFFF;
+    padding: 10rem 0;
+    overflow-x: hidden;
+    
+    @include media.desktops {
+        .container {
+            display: flex;
+        }
+    }
+
+    .highlight__description {
+        text-align: center;
+        padding: 0 3rem;
+
+        &::before {
+            content: url(../assets/patterns/pattern-divide.svg);
+            position: relative;
+            bottom: 4rem;
+        }
+
+        @include media.tablets {
+            max-width: 45rem;
+            margin: 0 auto;
+        }
+
+        @include media.desktops {
+            padding: 10rem 8rem 0;
+            text-align: justify;
+        }
+    }
+
+    .highlight__title {
+        position: relative;
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    .highlight__text {
+        padding: 3rem 0 0;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+
+    .highlight__cards-container {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 7rem;
+
+        @include media.tablets {
+            gap: 3rem;
+        }
+
+        @include media.desktops {
+            gap: 1rem;
+        }
+    }
+
+    .hightlight__card {
+        margin: 0 3rem;
+        padding-bottom: 1rem;
+        border-bottom: .1rem solid #979797;
+
+        @include media.tablets {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 10rem;
+        }
+
+        @media screen and (min-width: 1100px) {
+            justify-content: center;
+        }
+    }
+
+    .card__container-image {
+        text-align: justify;
+
+        @include media.tablets {
+
+            &::before {
+                content: url(../assets/patterns/pattern-divide.svg);
+                position: relative;
+                top: 6rem;
+                left: 13rem;
+
+                @media screen and (min-width: 1100px) {
+                    left: -6rem;
+                }
+            }
+        }
+    }
+
+    .card__img {
+        width: 80%;
+    }
+
+    .card__content {
+        padding-top: 3rem;
+        text-align: center;
+
+        @include media.desktops {
+            text-align: justify;
+        }
+    }
+
+    .card__title {
+        font-size: 2rem;
+    }
+
+    .card__description {
+        padding: 3rem 5rem 3.5rem;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+
+        @include media.tablets {
+            max-width: 45rem;
+        }
+
+        @include media.desktops {
+            padding: 2rem 0;
+        }
+    }
+}

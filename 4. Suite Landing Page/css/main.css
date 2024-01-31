@@ -1,0 +1,311 @@
+@import "https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: "Epilogue", sans-serif;
+  font-weight: normal;
+}
+
+header, main, section {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+span {
+  font-weight: bolder;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px 0;
+}
+
+.main {
+  padding: 70px 0 0 20px;
+  background-image: url(../images/pattern-curved-line-1.svg);
+  background-repeat: no-repeat;
+  background-size: 150px 30px;
+  background-position: 170px 37px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+@media (min-width: 768px) {
+  .main {
+    grid-template-rows: repeat(2, 0.5fr);
+    grid-template-columns: repeat(2, 1fr);
+    background-position: 200px 130px;
+  }
+}
+@media (min-width: 992px) {
+  .main {
+    background-position: 200px 130px;
+    grid-template-columns: repeat(2, 1fr) 0.5fr;
+  }
+}
+@media (min-width: 768px) {
+  .main .main__informations {
+    grid-column: 1/2;
+    position: absolute;
+    margin-top: 100px;
+  }
+}
+@media (min-width: 992px) {
+  .main .main__informations {
+    padding: 0;
+    grid-column: 1;
+  }
+}
+.main .main__informations-title {
+  font-size: 40px;
+  line-height: 1.2;
+}
+@media (min-width: 768px) {
+  .main .main__informations-title {
+    font-size: 55px;
+    padding-right: 200px;
+  }
+}
+@media (min-width: 992px) {
+  .main .main__informations-title {
+    font-size: 60px;
+    padding-right: 450px;
+  }
+}
+.main .main__informations-text {
+  font-size: 18px;
+  padding: 30px 30px 25px 0;
+  color: rgb(78, 92, 116);
+  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  .main .main__informations-text {
+    font-size: 19px;
+    padding-right: 450px;
+  }
+}
+@media (min-width: 992px) {
+  .main .main__informations-text {
+    padding-right: 700px;
+  }
+}
+.main .main__image {
+  width: 95%;
+  margin-top: 30px;
+  background-image: url(../images/image-hero-landscape.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+}
+@media (min-width: 768px) {
+  .main .main__image {
+    background-image: none;
+    text-align: center;
+    width: 100%;
+    grid-column: 2/4;
+    margin-top: 0;
+  }
+}
+@media (min-width: 992px) {
+  .main .main__image {
+    grid-column: 2;
+  }
+}
+.main .main__image .main__image-cover {
+  display: none;
+}
+@media (min-width: 768px) {
+  .main .main__image .main__image-cover {
+    display: inline-block;
+    height: 500px;
+    width: 85%;
+  }
+}
+.main .main__numbers {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+@media (min-width: 768px) {
+  .main .main__numbers {
+    flex-direction: row;
+    justify-content: space-around;
+    grid-row: 2;
+    grid-column: -7/-1;
+  }
+}
+@media (min-width: 992px) {
+  .main .main__numbers {
+    grid-column: 3;
+    grid-row: 1;
+    flex-direction: column;
+  }
+}
+.main .main__numbers-item {
+  text-align: center;
+  text-transform: uppercase;
+}
+.main .main__numbers-item .main__numbers-value {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.main .main__numbers-item .main__numbers-label {
+  color: rgb(78, 92, 116);
+  letter-spacing: 2px;
+}
+
+.review {
+  margin-top: 205px;
+  background-color: rgb(23, 36, 58);
+  background-image: url(../images/pattern-curved-line-2.svg);
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: 50% 35%;
+  border-radius: 30px;
+  position: relative;
+  top: 30px;
+}
+@media (min-width: 768px) {
+  .review {
+    margin: 100px 20px 0;
+  }
+}
+@media (min-width: 992px) {
+  .review {
+    margin: -150px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 50%);
+    background-position: 44% 45%;
+  }
+}
+.review .review__img {
+  height: 400px;
+  background-image: url(../images/image-jeremy-large.png), url(../images/pattern-blur.svg);
+  background-repeat: no-repeat;
+  background-size: 200px 345px, 310px;
+  background-position: center, 50% 110%;
+  position: relative;
+  bottom: 185px;
+}
+@media (min-width: 992px) {
+  .review .review__img {
+    grid-column: 1/3;
+    position: relative;
+    bottom: 0;
+    background-size: 47%;
+  }
+}
+.review .review__description {
+  text-align: center;
+  margin-top: -120px;
+}
+@media (min-width: 992px) {
+  .review .review__description {
+    margin-top: 0;
+    grid-column: 3/5;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-top: 65px;
+  }
+}
+.review .review__description .review__description-title {
+  color: white;
+  font-size: 35px;
+}
+.review .review__description .review__description-text {
+  color: rgb(177, 177, 186);
+  padding: 20px 40px 0;
+  line-height: 1.7;
+  font-size: 18px;
+}
+@media (min-width: 992px) {
+  .review .review__description .review__description-text {
+    padding-left: 0;
+    padding-right: 100px;
+  }
+}
+.review .review__description-name {
+  padding-top: 40px;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: white;
+  font-weight: bolder;
+}
+.review .review__description-company {
+  color: rgb(177, 177, 186);
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  padding-top: 10px;
+  padding-bottom: 70px;
+}
+
+.footer {
+  background-color: rgb(243, 237, 231);
+  text-align: center;
+  padding: 80px 20px 70px;
+}
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media (min-width: 992px) {
+  .footer {
+    padding-top: 260px;
+  }
+}
+.footer__copyright {
+  padding-top: 40px;
+  color: rgb(78, 92, 116);
+}
+.footer .footer__social-media-icon {
+  margin-top: 40px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+.footer .footer__social-media-icon:hover {
+  transform: scale(1.2);
+}
+
+.btn {
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: bolder;
+  border: 1.5px solid rgb(23, 36, 58);
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+.btn__white {
+  background-color: white;
+}
+.btn__white:hover {
+  background-color: rgb(23, 36, 58);
+  color: white;
+}
+
+.btn__dark {
+  border: none;
+  background-color: rgb(23, 36, 58);
+  color: white;
+}
+.btn__dark:hover {
+  background-color: rgba(23, 36, 58, 0.605);
+}
+
+/*# sourceMappingURL=main.css.map */

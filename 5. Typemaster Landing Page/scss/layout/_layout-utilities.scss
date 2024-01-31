@@ -1,0 +1,12 @@
+@mixin flex-alignment($alignment: space-between) {
+    display: flex;
+    justify-content: $alignment;
+    align-items: center;
+}
+
+@mixin alignment-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 15px;
+}

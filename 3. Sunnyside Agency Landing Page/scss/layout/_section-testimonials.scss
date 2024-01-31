@@ -1,0 +1,57 @@
+@use '../utilities/media-queries' as media;
+
+.testimonials {
+    padding: 6rem;
+    font-weight: 900;
+    background: hsla(42, 92%, 90%, 0.192);
+    text-align: center;
+
+    .testimonials__card {
+        margin-bottom: 3.5rem;
+
+        @include media.large {
+            max-width: 310px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__title-section {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: 900;
+        color: hsl(210, 4%, 67%);
+        margin-bottom: 3rem;
+        letter-spacing: .3rem;
+        font-family: 'Fraunces', serif;
+    }
+
+    &__image-card {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        margin-bottom: 2.2rem;
+    }
+
+    &__text-card {
+        font-size: 1.1rem;
+        color: hsl(198, 62%, 26%);
+        margin-bottom: 2.5rem;
+        line-height: 1.6;
+        font-family: 'Barlow', sans-serif;
+    }
+
+    &__name-people {
+        display: block;
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+        font-family: 'Fraunces', serif;
+    }
+
+    &__role-people {
+        color: hsl(198, 62%, 26%);
+        font-size: .9rem;
+        margin-bottom: 0;
+        font-family: 'Barlow', sans-serif;
+    }
+
+}

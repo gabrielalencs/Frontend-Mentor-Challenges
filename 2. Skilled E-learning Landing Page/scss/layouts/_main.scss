@@ -1,0 +1,70 @@
+@use '../base/base-mixins' as mix;
+
+.main {
+    margin: 30px 30px 0;
+
+    @include mix.tablet {
+        margin: 20px auto 0;
+        max-width: 950px;
+        height: 550px;
+        padding: 0 30px;
+        display: flex;
+    }
+    
+    &__title {
+        padding-top: 30px;
+        font-size: 40px;
+
+
+        @include mix.mobile-pp {
+            font-size: 30px;
+        }
+
+        @include mix.tablet {
+            font-size: 50px;
+        }
+    }
+
+    &__text {
+        padding-top: 15px;
+        font-size: 20px;
+
+        @include mix.mobile-pp {
+            font-size: 15px;
+        }
+    }
+
+    .group__images {
+        max-width: 950px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include mix.tablet {
+            width: 40%;
+            align-items: center;
+        }
+
+        .main__image--mobile {
+            display: block;
+            width:300px;
+            margin:0 auto;
+
+            @include mix.tablet {
+                display: none;
+            }
+        }
+
+        .main__image--tablet {
+            display: none;
+
+            @include mix.tablet {
+                display: inline-block;
+                width: 650px;
+                position: relative;
+                top: -53px;
+                left: 144px;
+            }
+        }
+    }
+}

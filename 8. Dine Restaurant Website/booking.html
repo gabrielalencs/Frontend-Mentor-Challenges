@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Dine Restaurant Website | Booking</title>
+</head>
+<body>
+    <section class="s-reservations">
+        <div class="reservations__content">
+            <img src="assets/logo.svg" alt="logo restaurant">
+            <h2 class="reservations__title">Reservations</h2>
+            <p class="reservations__description">We can’t wait to host you. If you have any special requirements please feel free to call on the phone number below. We’ll be happy to accommodate you.</p>
+            <a href="#form" class="reservations__button hvr-shutter-out-horizontal">Reserve Place</a>
+        </div>
+
+        <div class="reservations__form-container" id="form">
+            <form class="reservations__form">
+                <div class="reservations__form-item">
+                    <input type="text" class="reservations__input input__name" id="form-name">
+                    <label for="form-name" class="reservations__form-label">Name</label>
+                    <span class="error__message hidden">Name is required</span>
+                </div>
+
+                <div class="reservations__form-item">
+                    <input type="email" class="reservations__input input__email" id="form-email">
+                    <label for="form-email" class="reservations__form-label">Email</label>
+                    <span class="error__message hidden">Email is required</span>
+                </div>
+
+                <div class="reservations__form-date">
+                    <div class="reservations__form-texts">
+                        <p>Pick a date</p>
+                        <span class="error__message hidden">This field is incomplete</span> 
+                    </div>
+
+                    <div class="reservations__field-container">
+                        <input type="number" placeholder="MM" min="1" max="12" class="reservations__form-field field-1">
+                        <input type="number" placeholder="DD" min="1" max="31" class="reservations__form-field field-2">
+                        <input type="number" placeholder="DD" min="2022" max="2030" class="reservations__form-field field-3">
+                    </div>
+                </div>
+
+                <div class="reservations__form-time">
+                    <div class="reservations__form-texts">
+                        <p>Pick a time</p>
+                        <span class="error__message hidden">This field is incomplete</span> 
+                    </div>
+
+                    <div class="reservations__field-container">
+                        <input type="number" placeholder="00" min="08" max="10" class="reservations__form-field field-4">
+                        <input type="number" placeholder="00" min="00" max="59" class="reservations__form-field field-5">
+                        <select name="stateMode" title="period" class="reservations__form-field">
+                            <option value="AM" selected>AM</option>
+                            <option value="PM">PM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="reservations__reserve-connter">
+                    <span class="reservation__counter count__down">-</span>
+                    <p class="reservation__amount-people"><span class="counter">1</span> person</p>
+                    <span class="reservation__counter count__up">+</span>
+                </div>
+
+                <button class="reservations__button-form" type="submit">Reservation</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__brand">
+            <img src="assets/logo.svg" alt="restaurant logo">
+        </div>
+
+        <div class="footer__address" data-aos="fade-right" data-aos-duration="1000">
+            <address>
+                <p>Marthwaite, Sedbergh Cumbria</p>
+            </address>
+            <p>+00 44 123 4567</p>
+        </div>
+
+        <div class="footer__horary" data-aos="fade-left" data-aos-duration="1000">
+            <p>Open Times</p>
+            <p>Mon - Fri: <time datetime="09:00"> 09:00</time> AM - <time datetime="10:00">10:00</time> PM
+            </p>
+            <p>Sat - Sun: <time datetime="09:00">09:00</time> AM - <time datetime="11:30">11:30</time> PM</p>
+        </div>
+    </footer>
+
+    <script src="js/booking.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Lib AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Frontend Mentor | Dine Restaurant Website</title>
+</head>
+
+<body>
+    <section class="s-hero">
+        <div class="hero__content" data-aos="fade-up" data-aos-duration="1000">
+            <img src="assets/logo.svg" alt="restaurant logo" class="hero__brand">
+            <h1 class="hero__title">Exquisite dining since 1989</h1>
+            <p class="hero__description">Experience our seasonal menu in beautiful country surroundings. Eat the
+                freshest produce from the comfort of our farmhouse.</p>
+            <a href="booking.html" class="hero__button hvr-shutter-out-horizontal">Book a Table</a>
+        </div>
+    </section>
+
+    <section class="s-cards">
+        <div class="container">
+            <div class="card card--one">
+                <div class="card__image-container" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="assets/homepage/enjoyable-place-mobile.jpg" alt="Enjoy the beautiful surroundings"
+                        class="card__img card__img--mobile">
+                    <img src="assets/homepage/enjoyable-place-tablet.jpg" alt="Enjoy the beautiful surroundings"
+                        class="card__img card__img--tablet">
+                    <img src="assets/homepage/enjoyable-place-desktop.jpg" alt="Enjoy the beautiful surroundings"
+                        class="card__img card__img--desktop">
+                </div>
+
+                <div class="card__informations" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="card__title">Enjoyable place for all the family</h2>
+                    <p class="card__description">Our relaxed surroundings make dining with us a great experience for
+                        everyone. We can even arrange a tour of the farm before your meal.</p>
+                </div>
+            </div>
+
+            <div class="card card--two">
+                <div class="card__image-container" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="assets/homepage/locally-sourced-mobile.jpg" alt="Enjoy the beautiful surroundings"
+                        class="card__img card__img--mobile">
+                    <img src="assets/homepage/locally-sourced-tablet.jpg" alt="Enjoy the beautiful surroundings"
+                        class="card__img card__img--tablet">
+                    <img src="assets/homepage/locally-sourced-desktop.jpg" alt="Enjoy the beautiful surroundings"
+                        class="card__img card__img--desktop">
+                </div>
+
+                <div class="card__informations" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="card__title">The most locally sourced food</h2>
+                    <p class="card__description">All our ingredients come directly from our farm or local fishery. So
+                        you
+                        can be sure that you’re eating the freshest, most sustainable food.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s-highlight">
+        <div class="container">
+            <div class="highlight__description" data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="highlight__title">A few highlights from our menu</h2>
+                <p class="highlight__text">We cater for all dietary requirements, but here’s a glimpse at some of our
+                    diner’s favourites. Our menu is revamped every season.</p>
+            </div>
+
+            <div class="highlight__cards-container">
+                <div class="hightlight__card" data-aos="fade-right" data-aos-duration="1000">
+                    <picture class="card__container-image">
+                        <source media="(max-width: 768px)" srcset="assets/homepage/salmon-mobile.jpg">
+                        <source media="(max-width: 1200px)" srcset="assets/homepage/salmon-desktop-tablet.jpg">
+                        <source media="(min-width: 1201px)" srcset="assets/homepage/salmon-desktop-tablet.jpg">
+                        <img src="assets/homepage/salmon-mobile.jpg" alt="Enjoy the delicious salmon" class="card__img">
+                    </picture>
+
+                    <div class="card__content">
+                        <h3 class="card__title">Seared Salmon Fillet</h3>
+                        <p class="card__description">Our locally sourced salmon served with a refreshing buckwheat
+                            summer salad.</p>
+                    </div>
+                </div>
+
+                <div class="hightlight__card" data-aos="fade-left" data-aos-duration="1000">
+                    <picture class="card__container-image">
+                        <source media="(max-width: 768px)" srcset="assets/homepage/beef-mobile.jpg">
+                        <source media="(min-width: 768px)" srcset="assets/homepage/beef-desktop-tablet.jpg">
+                        <img src="assets/homepage/beef-mobile.jpg" alt="Enjoy the delicious salmon" class="card__img">
+                    </picture>
+
+                    <div class="card__content">
+                        <h3 class="card__title">Rosemary Filet Mignon</h3>
+                        <p class="card__description">Our prime beef served to your taste with a delicious choice of
+                            seasonal sides.</p>
+                    </div>
+                </div>
+
+                <div class="hightlight__card" data-aos="fade-right" data-aos-duration="1000">
+                    <picture class="card__container-image">
+                        <source media="(max-width: 768px)" srcset="assets/homepage/chocolate-mobile.jpg">
+                        <source media="(min-width: 768px)" srcset="assets/homepage/chocolate-desktop-tablet.jpg">
+                        <img src="assets/homepage/chocolate-mobile.jpg" alt="Enjoy the delicious salmon"
+                            class="card__img">
+                    </picture>
+
+                    <div class="card__content">
+                        <h3 class="card__title">Summer Fruit Chocolate Mousse</h3>
+                        <p class="card__description">Creamy mousse combined with summer fruits and dark chocolate
+                            shavings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s-events">
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <picture class="events__container-image">
+                <source media="(max-width: 768px)" srcset="assets/homepage/family-gathering-mobile.jpg" class="events__image-mobile">
+                <source media="(max-width: 1200px)" srcset="assets/homepage/family-gathering-tablet.jpg" class="events__image-tablet">
+                <source media="(min-width: 1200px)" srcset="assets/homepage/family-gathering-desktop.jpg" class="events__image-desktop">
+                <img src="assets/homepage/family-gathering-mobile.jpg" alt="Enjoy the delicious salmon"
+                    class="events__img">
+            </picture>
+        </div>
+
+        <div class="events__content" data-aos="fade-up" data-aos-duration="1000">
+            <div class="events__types">
+                <ul class="events__types-list">
+                    <li class="event__type-item family__gathering">Family Gathering</li>
+                    <li class="event__type-item special__events">Special Events</li>
+                    <li class="event__type-item social__events">Social Events</li>
+                </ul>
+            </div>
+
+            <div class="events__description">
+                <h2 class="events__title">Family Gathering</h2>
+                <p class="events__text">We love catering for entire families. So please bring everyone along for a
+                    special meal with your loved ones. We’ll provide a memorable experience for all.</p>
+                <a href="booking.html" class="events__button hvr-shutter-out-horizontal">Book a table</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="s-booking">
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="booking__title">Ready to make a reservation?</h2>
+            <a href="booking.html" class="booking__button hvr-shutter-out-horizontal">Book a Table</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__brand">
+            <img src="assets/logo.svg" alt="restaurant logo">
+        </div>
+
+        <div class="footer__address" data-aos="fade-right" data-aos-duration="1000">
+            <address>
+                <p>Marthwaite, Sedbergh Cumbria</p>
+            </address>
+            <p>+00 44 123 4567</p>
+        </div>
+
+        <div class="footer__horary" data-aos="fade-left" data-aos-duration="1000">
+            <p>Open Times</p>
+            <p>Mon - Fri: <time datetime="09:00"> 09:00</time> AM - <time datetime="10:00">10:00</time> PM
+            </p>
+            <p>Sat - Sun: <time datetime="09:00">09:00</time> AM - <time datetime="11:30">11:30</time> PM</p>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/aos.js"></script>
+</body>
+
+</html>

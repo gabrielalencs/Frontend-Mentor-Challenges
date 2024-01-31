@@ -1,0 +1,46 @@
+@use '../utilities/media-queries' as media;
+@use '../utilities/mixins' as mixin;
+
+.gallery {
+    height: 80vh;
+
+    @include media.large {
+        height: 60vh;
+    }
+
+    .gallery__image-container--one {
+        background-image: url(../images/mobile/image-gallery-milkbottles.jpg);
+        @include mixin.alignment-bg;
+
+        @include media.large {
+            background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
+        }
+    }
+
+    .gallery__image-container--two {
+        background-image: url(../images/mobile/image-gallery-orange.jpg);
+        @include mixin.alignment-bg;
+
+        @include media.large {
+            background-image: url(../images/desktop/image-gallery-orange.jpg);
+        }
+    }
+
+    .gallery__image-container--three {
+        background-image: url(../images/mobile/image-gallery-cone.jpg);
+        @include mixin.alignment-bg;
+
+        @include media.large {
+            background-image: url(../images/desktop/image-gallery-cone.jpg);
+        }
+    }
+
+    .gallery__image-container--four {
+        background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
+        @include mixin.alignment-bg;
+
+        @include media.large {
+            background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
+        }
+    }
+}

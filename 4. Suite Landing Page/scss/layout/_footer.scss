@@ -1,0 +1,33 @@
+@use '../base/variables' as var;
+@use '../base/base-mixins' as mix;
+@use 'layout-mixins';
+
+
+.footer {
+    background-color: var.$bg-footer;
+    text-align: center;
+    padding: 80px 20px 70px;
+
+    @include mix.tablet {
+        @include layout-mixins.alignment-items($align: space-around);
+    }
+
+    @include mix.desktop {
+        padding-top: 260px;
+    }
+
+    &__copyright {
+        padding-top: 40px;
+        color: var.$txt-color-primary;
+    }
+
+    .footer__social-media-icon {
+        margin-top: 40px;
+        margin-right: 10px;
+        transition: all .3s ease;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}

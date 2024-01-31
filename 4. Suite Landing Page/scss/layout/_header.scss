@@ -1,0 +1,6 @@
+@use 'layout-mixins' as mix;
+
+.header {
+    @include mix.alignment-items;
+    padding: 30px 20px 0;
+}

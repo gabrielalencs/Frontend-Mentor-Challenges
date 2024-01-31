@@ -1,0 +1,10 @@
+@use '../base/variables' as var;
+
+@mixin styles-card-courses ($height: 250px) {
+    width: 90%;
+    height: $height;
+    background-color: var.$white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 0 30px;
+}

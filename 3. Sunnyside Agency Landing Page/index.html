@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"
+        defer></script>
+    <!-- Boostrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg p-0 pt-lg-5 ps-lg-5 pe-lg-5 p-3  header__navbar">
+            <div class="container-fluid p-0 header__container">
+                <a class="navbar-brand header__brand" href="#"><img src="images/logo.svg" alt="Logo Sunnyside Agency"
+                        class="header__logo"></a>
+                <button class="navbar-toggler text-white header__button-toggle" type="button"
+                    data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" aria-expanded="false"
+                    aria-label="Toggle navigation" data-bs-toggle="offcanvas">
+                    <i class="navbar-toggler-icon text-white header__button-icon bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end gap-5 header__menu-container" id="navbarNav">
+                    <ul class="navbar-nav gap-5 header__menu">
+                        <li class="nav-item header__menu-item">
+                            <a class="nav-link header__menu-link" aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item header__menu-item">
+                            <a class="nav-link header__menu-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item header__menu-item">
+                            <a class="nav-link header__menu-link" href="#">Projects</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="header__btn">Contact</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid d-lg-none header__offcanvas-container">
+            <div class="offcanvas d-flex justify-content-center offcanvas-start header__offcanvas" data-bs-scroll="true" data-bs-backdrop="false"
+                tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header flex-column gap-3 p-0">
+                    <ul class="nav flex-column gap-3 header__nav-offcanvas">
+                        <li class="nav-item header__offcanvas-item">
+                            <a href="#" class="nav-link header__offcanvas-link">About</a>
+                        </li>
+                        <li class="nav-item header__offcanvas-item">
+                            <a href="#" class="nav-link header__offcanvas-link">Services</a>
+                        </li>
+                        <li class="nav-item header__offcanvas-item">
+                            <a href="#" class="nav-link header__offcanvas-link">Projects</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="header__offcanvas-button">Contact</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__text">
+            <h1 class=" header__title">We are creatives</h1>
+            <img src="images/icon-arrow-down.svg" alt="Icon arrow" class="header__icon-arrow">
+        </div>
+    </header>
+
+    <main class="feature d-flex flex-column">
+        <article class="row w-100 m-0 feature__article">
+            <div
+                class="col-lg-6 d-flex flex-column justify-content-center order-1 order-lg-0 feature__informations-article">
+                <h2 class="feature__title-article">Tranform your brand</h2>
+                <p class="feature__text-article">We are a full-service creative agency specializing in helping brands
+                    grow
+                    fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+                <a href="#" class="feature__link-article feature__link-article--one">Learn More</a>
+            </div>
+            <div class="col-lg-6 m-0 feature__article-image feature__article-image--one"></div>
+        </article>
+
+        <article class="row w-100 m-0 feature__article">
+            <div class="col-lg-6 d-flex flex-column justify-content-center order-1 feature__informations-article">
+                <h2 class="feature__title-article">Stand out to the right audience</h2>
+                <p class="feature__text-article">Using a collaborative formula of designers, researchers, photographers,
+                    videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+                <a href="#" class="feature__link-article feature__link-article--two">Learn More</a>
+            </div>
+            <div class="col-lg-6 m-0 feature__article-image feature__article-image--two"></div>
+        </article>
+
+        <section class="row m-0 feature__benefits">
+            <div
+                class="col-lg-6 d-flex flex-column justify-content-end text-center feature__benefits-container feature__benefits-container--left">
+                <h3 class="feature__title-benefits">Graphic design</h3>
+                <p class="feature__text-benefits">Great design makes you memorable. We deliver artwork that underscores
+                    your brand message and captures potential clients’ attention.</p>
+            </div>
+            <div
+                class="col-lg-6 d-flex flex-column justify-content-end text-center feature__benefits-container feature__benefits-container--right">
+                <h3 class="feature__title-benefits">Graphic design</h3>
+                <p class="feature__text-benefits">Great design makes you memorable. We deliver artwork that underscores
+                    your brand message and captures potential clients’ attention.</p>
+            </div>
+        </section>
+    </main>
+    <section class="testimonials">
+        <h2 class="testimonials__title-section">Client testimonials</h2>
+
+        <div class="row justify-content-center testimonials__cards-group">
+            <div class="col-lg-4 col-12 testimonials__card">
+                <img src="images/image-emily.jpg" alt="Image people" class="testimonials__image-card">
+                <p class="testimonials__text-card">We put our trust in Sunnyside and they delivered, making sure our
+                    needs were met and deadlines were always hit.</p>
+                <span class="testimonials__name-people">Emily R.</span>
+                <span class="testimonials__role-people">Marketing Director</span>
+            </div>
+            <div class="col-lg-4 col-12 testimonials__card">
+                <img src="images/image-thomas.jpg" alt="Image people" class="testimonials__image-card">
+                <p class="testimonials__text-card">Sunnyside’s enthusiasm coupled with their keen interest in our
+                    brand’s success made it a satisfying and enjoyable experience.</p>
+                <span class="testimonials__name-people">Thomas S.</span>
+                <span class="testimonials__role-people">Chief Operating Officer</span>
+            </div>
+            <div class="col-lg-4 col-12 testimonials__card">
+                <img src="images/image-jennie.jpg" alt="Image people" class="testimonials__image-card">
+                <p class="testimonials__text-card">Incredible end result! Our sales increased over 400% when we worked
+                    with Sunnyside. Highly recommended!</p>
+                <span class="testimonials__name-people">Jennie F.</span>
+                <span class="testimonials__role-people">Business Owner</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="row row-cols-2 w-100 m-0 gallery">
+        <div class="col-lg-3 p-0 gallery__image-container gallery__image-container--one"></div>
+        <div class="col-lg-3 p-0 gallery__image-container gallery__image-container--two"></div>
+        <div class="col-lg-3 p-0 gallery__image-container gallery__image-container--three"></div>
+        <div class="col-lg-3 p-0 gallery__image-container gallery__image-container--four"></div>
+    </section>
+    
+    <footer class="d-flex flex-column align-items-center footer">
+        <img src="images/logo.svg" alt="logo" class="footer__logo">
+        <div class="footer__links">
+            <nav class="footer__nav-links">
+                <ul class="d-flex p-0 footer__nav">
+                    <li class="nav-item footer__nav-item"><a href="#" class="nav-link footer__nav-link">About</a></li>
+                    <li class="nav-item footer__nav-item"><a href="#" class="nav-link footer__nav-link">Services</a>
+                    </li>
+                    <li class="nav-item footer__nav-item"><a href="#" class="nav-link footer__nav-link">Projects</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="d-flex justify-content-center gap-4 footer__social-media">
+                <img src="images/icon-facebook.svg" alt="Icon Fecebook" class="footer__icon-social-media">
+                <img src="images/icon-instagram.svg" alt="Icon instagram" class="footer__icon-social-media">
+                <img src="images/icon-twitter.svg" alt="Icon twitter" class="footer__icon-social-media">
+                <img src="images/icon-pinterest.svg" alt="Icon pinterest" class="footer__icon-social-media">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

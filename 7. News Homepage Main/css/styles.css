@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+/* Estilos Padrões */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F0F0F0;
+}
+
+.body-background::before {
+    content: "";
+    height: 100vh;
+    width: 98vw;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+.container {
+    max-width: 1281px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.nav-link {
+    color: #5D5F79;
+    font-size: 17px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: #F15E50;
+}
+
+@media (min-width: 1281px) {
+    .nav-menu {
+        display: flex;
+        gap: 35px;
+    }
+
+    .header-button {
+        display: none;
+    }
+}
+
+
+/* sidebar */
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65%;
+    max-width: 300px;
+    background-color: #F0F0F0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 30px;
+}
+
+
+.sidebar-button {
+    text-align: right;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav-link {
+    font-size: 17px;
+}
+
+
+/* Main */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 35px;
+}
+
+@media (min-width: 1281px) {
+    .main {
+        display: grid;
+        grid-template-columns: 2.1fr 1.1fr;
+        grid-template-rows: 520px;
+        grid-template-areas: "grid1     grid2"
+            "grid3     grid3";
+        row-gap: 55px;
+        column-gap: 40px;
+    }
+}
+
+/* Main News */
+
+.main-news {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-image {
+    width: 100%;
+}
+
+.main-image-mobile {
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.main-image-desktop {
+    display: none;
+}
+
+@media (min-width: 1281px) {
+    .main-news {
+        grid-area: grid1;
+    }
+
+    .main-news div {
+        flex: 1;
+    }
+
+    .main-image-mobile {
+        display: none;
+    }
+
+    .main-image-desktop {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: 315px;
+    }
+
+    .container-texts {
+        display: flex;
+    }
+
+    .main-news h1 {
+        max-width: 380px;
+    }
+}
+
+.main-news h1 {
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 1.0;
+}
+
+.main-news p {
+    margin: 25px 0;
+    color: #5d5f79;
+    font-size: 17px;
+}
+
+.main-news-btn {
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #F15E50;
+    color: #FFF;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transition: all .3s;
+    outline: 2px solid #F15E50;
+}
+
+.main-news-btn:hover {
+    color: #F15E50;
+    background: transparent;
+}
+
+
+/* News */
+
+.news {
+    background-color: #00001a;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media (min-width: 1281px) {
+    .news {
+        grid-area: grid2;
+    }
+}
+
+.news-title {
+    font-size: 30px;
+    color: #e9ab53;
+}
+
+.news h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.news p {
+    color: #c5c6ce;
+    font-size: 17px;
+}
+
+.new-one {
+    margin-top: 10px;
+}
+
+.news div:not(:last-child) {
+    border-bottom: 1px solid #313247;
+    padding-bottom: 40px;
+}
+
+
+/* Posts */
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+@media (min-width: 1281px) {
+    .posts {
+        grid-area: grid3;
+        flex-direction: row;
+    }
+}
+
+.posts div {
+    display: flex;
+    gap: 30px;
+}
+
+@media (min-width: 1281px) {
+    .posts {
+        grid-area: grid3;
+    }
+
+    .posts div {
+        gap: 10px;
+        max-width: 390px;
+        justify-content: flex-end;
+    }
+}
+
+.posts img {
+    height: 150px;
+}
+
+.posts .posts-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.posts-texts span {
+    font-size: 30px;
+    font-weight: 900;
+    color: #c5c6ce;
+}
+
+.posts-texts h3 {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.posts-texts p {
+    color: hsl(236, 13%, 42%);
+    font-size: 16px;
+    line-height: 1.6;
+}

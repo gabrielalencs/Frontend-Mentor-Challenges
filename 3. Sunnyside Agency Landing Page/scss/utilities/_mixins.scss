@@ -1,0 +1,29 @@
+@mixin design-button() {
+    height: 2.8125rem;
+    width: 6.875rem;
+    border: none;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    transition: .3s;
+    font-size: .9375rem;
+}
+
+@mixin styles-after-links() {
+    content: "";
+    display: block;
+    position: relative;
+    bottom: 0.7rem;
+    left: 0;
+    width: 150px;
+    height: 0.8rem;
+    z-index: -1;
+    border-radius: 0.5rem;
+    transition: all 0.35s ease;
+}
+
+@mixin alignment-bg() {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

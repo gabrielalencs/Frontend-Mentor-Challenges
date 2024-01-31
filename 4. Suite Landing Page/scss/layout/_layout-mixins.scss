@@ -1,0 +1,5 @@
+@mixin alignment-items($align: space-between) {
+    display: flex;
+    justify-content: $align;
+    align-items: center;
+}

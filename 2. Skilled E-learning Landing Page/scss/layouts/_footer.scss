@@ -1,0 +1,24 @@
+@use 'layouts-mixins';
+@use '../base/variables' as var;
+@use '../base/base-mixins' as mix;
+
+.footer {
+    background-color:var.$primary-color;
+    padding: 30px;
+    @include layouts-mixins.alignment-items;
+
+    .brand__logo {
+        width: 130px;
+
+        @include mix.tablet {
+            width: 100px;
+        }
+    }
+
+    .btn__gradient--footer {
+        @include mix.mobile-pp {
+            display: none;
+        }
+    }
+  
+}

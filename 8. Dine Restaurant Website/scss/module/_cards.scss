@@ -1,0 +1,172 @@
+@use '../base/breakpoints' as media;
+
+.s-cards {
+    .container {
+        @include media.tablets {
+            background-image: url(../assets/patterns/pattern-curve-top-right.svg), url(../assets/patterns/pattern-lines.svg), url(../assets/patterns/pattern-curve-top-left.svg);
+            background-repeat: no-repeat;
+            background-position: 0 10rem, 65rem 90rem, 45rem 119rem;
+            background-size: 50% 25%, 20% 5%, 65% 25%;
+        }
+        
+        @include media.desktops {
+            background-position: 0rem 26rem, 94rem 90rem, 43rem 98rem;
+            background-size: 60% 25%, 20% 5%, 80% 25%;
+        }
+    }
+    
+    .card {
+        text-align: center;
+    
+        @include media.desktops {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+        }
+    }
+    
+    .card--one {
+        margin-bottom: 6rem;
+        flex-direction: row;
+    
+        @include media.tablets {
+            margin-bottom: 0;
+            position: relative;
+            top: -7rem;
+        }
+    
+        @include media.desktops {
+            top: 0;
+        }
+    }
+    
+    .card__img--mobile {
+        max-width: 70%;
+    
+        @include media.tablets {
+            display: none;
+        }
+    }
+    
+    .card--one .card__img--mobile {
+        position: relative;
+        top: -7rem;
+    }
+    
+    .card__img--tablet {
+        display: none;
+    
+        @include media.tablets {
+            display: block;
+            margin: 0 auto;
+        }
+    
+        @include media.desktops {
+            display: none;
+        }
+    }
+    
+    .card__img--desktop {
+        display: none;
+    
+        @include media.desktops {
+            display: block;
+            width: 46.5rem;
+        }
+    }
+    
+    .card--one .card__img--desktop {
+        position: relative;
+        top: -7rem;
+    }
+
+    .card--two .card__img--desktop {
+        position: relative;
+        top: 5rem;
+    }
+    
+    .card--one .card__informations::before {
+        content: url(../assets/patterns/pattern-divide.svg);
+        position: relative;
+        top: -3rem;
+    
+        @include media.tablets {
+            top: 4rem;
+        }
+    
+        @include media.desktops {
+            right: 20rem;
+        }
+    }
+    
+    .card--two .card__informations::before {
+        content: url(../assets/patterns/pattern-divide.svg);
+        position: relative;
+        top: 4rem;
+    
+        @include media.desktops {
+            right: 18rem;
+        }
+    }
+    
+    @include media.desktops {
+        .card--one .card__informations {
+            margin-top: 6rem;
+        }
+    
+        .card--two .card__informations {
+            margin-top: 12rem;
+        }
+    }
+    
+    .card__title {
+        font-size: 4rem;
+        line-height: 4rem;
+        padding: 0 3rem;
+    
+        @include media.tablets {
+            font-size: 5rem;
+            line-height: 6rem;
+            max-width: 50rem;
+            margin: 0 auto;
+        }
+    }
+    
+    @include media.tablets {
+        .card--one .card__title {
+            margin-top: 7rem;
+        }
+    }
+    
+    
+    .card--two .card__title {
+        padding-top: 7rem;
+    
+        @include media.tablets {
+            line-height: 5rem;
+        }
+    }
+    
+    .card__description {
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 2.5rem;
+        padding: 2rem 3rem;
+    
+        @include media.tablets {
+            font-size: 2.2rem;
+            line-height: 3rem;
+            max-width: 60rem;
+            margin: 0 auto;
+        }
+    
+        @include media.desktops {
+            padding: 2rem 6rem;
+        }
+    }
+    
+    .card--two .card__description {
+        padding-bottom: 7rem;
+    }
+}
+

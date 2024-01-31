@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1400px;
+  overflow-x: hidden; 
+}
+
+h1, h2, h3 {
+  color: #162542;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+p, span {
+  color: #7B8BAD;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 30px 0;
+}
+@media (min-width: 1200px) {
+  .header {
+    margin: 30px 100px 0;
+  }
+}
+
+@media (min-width: 790px) {
+  .main {
+    display: flex;
+  }
+}
+@media (min-width: 1200px) {
+  .main {
+    margin: 0 70px 0;
+  }
+}
+.main .main__content {
+  margin: 50px 0 0 30px;
+}
+@media (min-width: 790px) {
+  .main .main__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.main .main__content .main__title {
+  font-size: 45px;
+}
+.main .main__content .main__description {
+  margin: 25px 20px 0 0;
+  font-size: 20px;
+}
+.main .main__content .main__actions {
+  margin-top: 30px;
+  max-width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .main__content .main__actions .main__release-date {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.main .main__image-container {
+  width: 100%;
+  height: 500px;
+  background-image: url(../images/image-keyboard-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 15px;
+  border-radius: 30px;
+  margin: 50px 0 0 30px;
+}
+@media (min-width: 790px) {
+  .main .main__image-container {
+    width: 50%;
+    background-image: url(../images/image-keyboard-tablet.jpg);
+  }
+}
+@media (min-width: 1200px) {
+  .main .main__image-container {
+    position: relative;
+    right: -50px;
+    background-image: url(../images/image-keyboard-desktop.jpg);
+  }
+}
+
+.keyboard-info {
+  margin: 30px 30px 0 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 95%;
+}
+@media (min-width: 790px) {
+  .keyboard-info {
+    margin: 30px 0 0 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .keyboard-info {
+    grid-template-columns: 1fr 1.5fr 1fr;
+    margin: 50px 120px 0;
+  }
+}
+.keyboard-info .keyboard-info__image--one {
+  background-image: url(../images/image-glass-and-keyboard-tablet.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 15px;
+  grid-column: 2/3;
+}
+@media (min-width: 790px) {
+  .keyboard-info .keyboard-info__image--one {
+    width: 90%;
+  }
+}
+@media (min-width: 1200px) {
+  .keyboard-info .keyboard-info__image--one {
+    height: 400px;
+  }
+}
+.keyboard-info .keyboard-info__image--two {
+  background-image: url(../images/image-phone-and-keyboard-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 15px;
+  grid-column: 1/2;
+  grid-row: -5/-2;
+  position: relative;
+  left: -20px;
+}
+@media (min-width: 1200px) {
+  .keyboard-info .keyboard-info__image--two {
+    height: 400px;
+  }
+}
+.keyboard-info .keyboard-info__image--two::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 94, 0, 0.568627451);
+  border-radius: 10px;
+}
+.keyboard-info .keyboard-info__content {
+  grid-row: 3;
+  grid-column: -4/-1;
+  text-align: center;
+  margin-top: 30px;
+}
+@media (min-width: 790px) {
+  .keyboard-info .keyboard-info__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  .keyboard-info .keyboard-info__content {
+    flex-direction: column;
+    grid-row: -5/-2;
+    grid-column: 3;
+    margin-top: 0;
+    margin-right: 100px;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+.keyboard-info .keyboard-info__content .keyboard-info__title {
+  font-size: 35px;
+  margin: 0 50px;
+}
+@media (min-width: 790px) {
+  .keyboard-info .keyboard-info__content .keyboard-info__title {
+    margin: 0;
+  }
+}
+.keyboard-info .keyboard-info__content .keyboard-info__description {
+  margin: 20px 45px;
+  font-size: 20px;
+}
+@media (min-width: 1200px) {
+  .keyboard-info .keyboard-info__content .keyboard-info__description {
+    margin: 0;
+  }
+}
+
+.keyboard-benefits {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+@media (min-width: 790px) {
+  .keyboard-benefits {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 80px auto;
+    width: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  .keyboard-benefits {
+    flex-wrap: nowrap;
+    margin: 60px 105px;
+    align-items: flex-start;
+    gap: 50px;
+  }
+}
+
+.footer {
+  margin: 50px 0 30px;
+  text-align: center;
+}
+.footer .footer__reserved-rights {
+  font-size: 18px;
+}
+.footer .footer__reserved-rights .footer__bold {
+  font-weight: bold;
+}
+
+.btn {
+  border: none;
+  padding: 13px 14px;
+  border-radius: 7px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.header__btn {
+  background-color: #e8eff2;
+}
+.header__btn:hover {
+  background-color: #162542;
+  color: white;
+}
+
+.main__button {
+  background-color: #F16718;
+  color: white;
+}
+.main__button:hover {
+  background-color: rgba(250, 121, 47, 0.7019607843);
+}
+
+.keyboard-benefits__card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+@media (min-width: 790px) {
+  .keyboard-benefits__card {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+.keyboard-benefits__card .keyboard-benefits__around {
+  width: 50px;
+  height: 50px;
+  background-color: #F16718;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.keyboard-benefits__card .keyboard-benefits__title {
+  font-size: 23px;
+  margin: 30px 0 0;
+}
+.keyboard-benefits__card .keyboard-benefits__description {
+  margin: 15px 0;
+}
+
+/*# sourceMappingURL=main.css.map */

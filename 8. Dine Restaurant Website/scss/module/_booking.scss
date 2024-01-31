@@ -1,0 +1,35 @@
+@use '../base/breakpoints' as media;
+
+.s-booking {
+    color: #FFF;
+    text-align: center;
+    background-image: url(../assets/homepage/ready-bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8rem 3rem;
+
+    @include media.tablets {
+        background-image: url(../assets/homepage/ready-bg-tablet.jpg);
+    }
+
+    @include media.desktops {
+        background-image: url(../assets/homepage/ready-bg-desktop.jpg);
+    }
+
+    .booking__title {
+        font-size: 3.5rem;
+    }
+
+    .booking__button {
+        display: inline-block;
+        padding: 1.7rem 7rem;
+        border: 2px solid #FFF;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        font-weight: 600;
+        letter-spacing: 3px;
+        color: #FFF;
+        margin-top: 3rem;
+        max-width: max-content;
+    }
+}

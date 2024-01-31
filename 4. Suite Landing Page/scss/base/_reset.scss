@@ -1,0 +1,19 @@
+@import"https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: "Epilogue", sans-serif;
+    font-weight: normal;
+}
+
+header, main, section {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+span {
+    font-weight: bolder;
+}

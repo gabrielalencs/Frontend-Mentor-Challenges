@@ -1,0 +1,350 @@
+@media screen and (max-width: 400px) {
+    * {
+        transition: all 0.3s ease-in-out;
+    }
+    
+    /* Header */
+    
+    .header {
+        font-size: 0.75rem;
+        padding: 1.5625rem 0.625rem 0;
+    }
+
+    .header__logo {
+        width: 6.25rem;
+    }
+
+    .header__img {
+        width: 100%;
+    }
+
+    .header__item::before {
+        content: "";
+        width: 0;
+        height: 0.0938rem;
+    }
+
+    /* Section One */
+
+    .main__section-one .main__title {
+        font-size: 1.25rem;
+    }
+
+    .main__section-one .main__text {
+        font-size: 0.8125rem;
+    }
+
+    .main__input-control,
+    .main__btn {
+        width: 12.5rem;
+        padding: 0.625rem;
+        font-size: 0.625rem;
+    }
+
+    .main__input-control::placeholder {
+        font-size: 0.625rem;
+    }
+
+    .error-message {
+        margin: 0.3125rem 2.5rem 0 0;
+    }
+
+    .input-highlight {
+        top: 2rem;
+    }
+
+    .main__input-control:focus~.input-highlight {
+        width: 12.5rem;
+    }
+
+    /* Section Two */
+
+    .main__section-two .main__title {
+        font-size: 1.25rem;
+    }
+
+    .main__section-two .main__text {
+        font-size: 0.8125rem;
+    }
+
+    .main__works {
+        font-size: 0.875rem;
+    }
+
+    .main__section-card {
+        width: 15.625rem;
+        font-size: 0.8125rem;
+        padding: 1.5625rem 1.5625rem 1.875rem;
+    }
+
+    .main__section-card .main__quote {
+        height: 0.9375rem;
+    }
+
+    .main__card-group p{
+        font-size: 0.75rem;
+    }
+
+    /* Section Three*/
+
+    .main__section-three {
+        padding-bottom: 3.125rem;
+    }
+    
+    .main__section-three .main__title {
+        font-size: 1.25rem;
+    }
+
+    .main__section-three .main__text {
+        padding: 1.25rem 1.25rem 2.5rem;
+        font-size: 0.8125rem;
+    }
+
+    /* Foooter */
+
+    .footer {
+        font-size: 0.8125rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    * {
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Header */
+
+    .header {
+        font-size: 1.1875rem;
+    }
+
+    .header__menu {
+        gap: 1.875rem;
+    }
+
+    .header__logo .header__img {
+        width: 100%;
+    }
+
+    /* Section One */
+
+    .main__section-one .main__title {
+        font-size: 1.875rem;
+    }
+
+    .main__section-one .main__text {
+        font-size: 1.3125rem;
+    }
+
+    .main__section-one .error-message {
+        margin: 0.3125rem 7.5rem 0 0;
+    }
+
+    .main__input-control,
+    .main__btn {
+        width: 25rem;
+    }
+
+    .main__input-control:focus~.input-highlight {
+        width: 25rem;
+    }
+
+    /* Section Two */
+
+    .main__section-two .main__title {
+        font-size: 1.875rem;
+    }
+
+    .main__section-two .main__text {
+        font-size: 1.125rem;
+        text-align: center;
+    }
+
+    .main__section-two .main__works {
+        font-size: 1.1875rem;
+    }
+
+    /* Section Three */
+
+    .main__section-three .main__title {
+        font-size: 2rem;
+    }
+
+    .main__section-three .main__text {
+        font-size: 1.3125rem;
+    }
+
+    /* Footer */
+
+    .footer {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer__contact {
+        margin-right: 3.75rem;
+    }
+
+    .footer__list {
+        width: 14.375rem;
+    }
+
+    .footer__nav-info {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding-top: 3.125rem;
+    }
+
+    .footer__nav-list {
+        width: 5.625rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    /* Section One */
+
+    .main__section-one {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+        margin: 4.375rem 0;
+    }
+
+    .main__section-one .main__image {
+        order: 1;
+        margin: 0;
+    }
+
+    .main__section-one .main__img {
+        width: 100%;
+    }
+
+    .main__section-one .main__info {
+        text-align: left;
+        padding: 0 0 0 3.125rem;
+        width: 40.625rem;
+    }
+
+    .main__section-one .main__title {
+        padding: 0 10px 0 0;
+        font-size: 2.125rem;
+    }
+
+    .main__section-one .main__text {
+        padding: 1.25rem 0 1.25rem 0;
+        font-size: 1.1875rem;
+    }
+
+    .main__section-one .main__form {
+        position: relative;
+    }
+
+    .main__section-one .main__input-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .main__section-one .main__input-control {
+        width: 18.75rem;
+    }
+
+    .main__section-one .main__input-control:focus~.input-highlight {
+        width: 18.75rem;
+    }
+
+    .main__section-one .error-message {
+        position: absolute;
+    }
+
+    .main__input-control:focus~.input-highlight {
+        width: 18.75rem;
+    }
+
+    .main__section-one .main__btn {
+        width: 12.5rem;
+    }
+
+    /* Section Two */
+
+    .main__section-two {
+        background-image: url(images/bg-curve-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 270% 100%;
+        background-position: 50% 10%;
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .main__section-two .main__image {
+        width: 50rem;
+        order: 1;
+        margin-bottom: 10rem;
+    }
+
+    .main__section-two .main__img {
+        width: 100%;
+    }
+
+    .main__section-two .main__info-group {
+        background-color: hsla(240, 80%, 98%, 0);
+        width: 40.625rem;
+        padding: 70px 0 0 4.375rem;
+        text-align: left;
+    }
+
+    .main__section-two .main__title {
+        padding: 0 0 1.25rem 0;
+        text-align: left;
+        font-size: 2.1875rem;
+    }
+
+    .main__section-two .main__text {
+        padding: 0 0 0.9375rem 0;
+        text-align: justify;
+    }
+
+    .main__section-card {
+        margin: 40px 0 0;
+    }
+
+    /* Section Three */
+
+    .main__section-three {
+        display: flex;
+        justify-content: space-between;
+        gap: 10.625rem;
+        padding: 4.375rem;
+    }
+
+    .main__section-three .main__info-group {
+        width: 37.5rem;
+        text-align: left;
+    }
+
+    .main__section-three .main__title {
+        padding: 0;
+        font-size: 1.875rem;
+    }
+
+    .main__section-three .main__text {
+        padding: 1.25rem 2.5rem 0 0;
+        font-size: 1.1875rem;
+    }
+
+    .main__input-control:focus~.input-highlight {
+        width: 25rem;
+    }
+
+    .main__section-three .error-message {
+        color: hsl(239, 90%, 88%);
+    }
+
+    .main__section-three .main__btn {
+        width: 16.875rem;
+        align-self: flex-start;
+    }
+}
