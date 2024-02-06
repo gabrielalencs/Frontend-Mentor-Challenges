@@ -1,6 +1,6 @@
 # Frontend Mentor - Newsletter Sign-Up Form With Success Message
 
-![desktop-preview](https://github.com/gabrielalencs/Frontend-Mentor-Challenges/assets/127636935/d9120855-a5be-4c31-b0e8-3c25600f3ffd)
+![desktop-preview](https://github.com/gabrielalencs/Frontend-Mentor-Challenges/blob/main/Newsletter%20Sign%20Up/assets/images/print.PNG)
 
 **Esse repositório é destinado as minhas soluções dos desafios da plataforma FrontEnd Mentor**
 
@@ -45,5 +45,5 @@ Vou continuar me aprofudando nessa linguagem e aprender mais sobre boas prática
  
 Para realizar o deploy da minha aplicação, utilizei a própria ferramenta de hospedagem do GitHub, o **GitHub Pages**
 <br>
-<a href="https://gabrielalencs.github.io/Frontend-Mentor-Challenges/6.%20Newsletter%20Sign%20Up/">Clique Aqui </a> para visualizar a aplicação.
+<a href="https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Newsletter%20Sign%20Up/">Clique Aqui </a> para visualizar a aplicação.
 
