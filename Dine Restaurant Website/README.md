@@ -40,5 +40,5 @@ os arquivos de cada página, mas de modo geral estou satisfeito com o resultado 
  
 Para realizar o deploy da minha aplicação, utilizei a própria ferramenta de hospedagem do GitHub, o **GitHub Pages**
 <br>
-<a href="https://gabrielalencs.github.io/Frontend-Mentor-Challenges/8.%20Dine%20Restaurant%20Website/">Clique Aqui </a> para visualizar a aplicação.
+<a href="https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Dine%20Restaurant%20Website/">Clique Aqui </a> para visualizar a aplicação.
 
