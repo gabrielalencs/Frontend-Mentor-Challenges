@@ -1,6 +1,6 @@
 # Frontend Mentor - News Homepage Main
 
-![desktop-preview](https://github.com/gabrielalencs/Frontend-Mentor-Challenges/assets/127636935/df39ce08-2252-4318-80c1-dd6366a36018)
+![desktop-preview](https://github.com/gabrielalencs/Frontend-Mentor-Challenges/blob/main/News%20Homepage%20Main/assets/images/print.PNG)
 
 **Esse repositório é destinado as minhas soluções dos desafios da plataforma FrontEnd Mentor**
 
@@ -42,5 +42,5 @@ Fiquei satisfeito com o resultado final, apesar de ter aprendido formas mais efi
  
 Para realizar o deploy da minha aplicação, utilizei a própria ferramenta de hospedagem do GitHub, o **GitHub Pages**
 <br>
-<a href="https://gabrielalencs.github.io/Frontend-Mentor-Challenges/7.%20News%20Homepage%20Main/">Clique Aqui </a> para visualizar a aplicação.
+<a href="https://gabrielalencs.github.io/Frontend-Mentor-Challenges/News%20Homepage%20Main/">Clique Aqui </a> para visualizar a aplicação.
 
