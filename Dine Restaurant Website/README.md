@@ -1,6 +1,6 @@
 # Frontend Mentor - Dine Restaurant Website
 
-<img width="100%" alt="print" src="https://github.com/gabrielalencs/Frontend-Mentor-Challenges/assets/127636935/e2f92fcb-ce9c-41f6-8cb1-f16f568950e5">
+<img width="100%" alt="print" src="https://github.com/gabrielalencs/Frontend-Mentor-Challenges/blob/main/Dine%20Restaurant%20Website/assets/print.PNG">
 
 **Esse repositório é destinado as minhas soluções dos desafios da plataforma FrontEnd Mentor**
 
