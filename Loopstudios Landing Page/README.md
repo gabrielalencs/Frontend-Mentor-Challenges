@@ -1,6 +1,6 @@
 # Frontend Mentor - loopstudios Landing Page
 
-![desktop-preview](https://github.com/gabrielalencs/Frontend-Mentor-Challenges/assets/127636935/af178a6d-ef44-45eb-9ff0-a86094a1f93a)
+![desktop-preview](https://github.com/gabrielalencs/Frontend-Mentor-Challenges/blob/main/Loopstudios%20Landing%20Page/images/print.PNG)
 
 **Esse repositório é destinado as minhas soluções dos desafios da plataforma FrontEnd Mentor**
 
