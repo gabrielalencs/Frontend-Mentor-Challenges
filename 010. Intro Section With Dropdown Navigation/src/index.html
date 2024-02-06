@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="../images/favicon-32x32.png" type="image/x-icon">
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+
+<body class="overflow-x-hidden h-screen">
+    <header class="px-8 py-6 max-w-1280 mx-auto lg:px-0">
+        <div class="md:flex md:justify-between md:items-center">
+
+            <div class="md:flex md:gap-20">
+
+                <div class="flex justify-between">
+                    <div>
+                        <img src="../images/logo.svg" alt="Company Logo">
+                    </div>
+                    <div class="md:hidden">
+                        <button class="menu-mobile-btn">
+                            <img src="../images/icon-menu.svg" alt="Icon Menu" class="relative z-10">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-container font-epilogue max-[768px]:menu-mobile">
+
+                    <nav class="relative">
+
+                        <ul class="menu-mobile-nav md:flex-row md:gap-7">
+
+                            <li class="menu-dropdown-item menu-dropdown-item-one">
+                                <div class="align-item">
+                                    <span>Features</span>
+                                    <img src="../images/icon-arrow-down.svg" alt="Icon Arrow" class="h-max">
+                                </div>
+
+                                <ul
+                                    class="dropdown-menu-list dropdown-menu-list-one md:absolute md:shadow-lg md:right-80">
+                                    <li class="dropdown-menu-item">
+                                        <img src="../images/icon-todo.svg" alt="icon todo" class="h-max">
+                                        <span>Todo List</span>
+                                    </li>
+
+                                    <li class="dropdown-menu-item">
+                                        <img src="../images/icon-calendar.svg" alt="icon calendar" class="h-max">
+                                        <span>Calendar</span>
+                                    </li>
+
+                                    <li class="dropdown-menu-item">
+                                        <img src="../images/icon-reminders.svg" alt="icon reminders" class="h-max">
+                                        <span>Reminders</span>
+                                    </li>
+
+                                    <li class="dropdown-menu-item">
+                                        <img src="../images/icon-planning.svg" alt="icon planning" class="h-max">
+                                        <span>Planning</span>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-dropdown-item menu-dropdown-item-two">
+                                <div class="align-item">
+                                    <span>Company</span>
+                                    <img src="../images/icon-arrow-down.svg" alt="Icon Arrow" class="h-max">
+                                </div>
+
+                                <ul class="dropdown-menu-list dropdown-menu-list-two md:absolute md:shadow-lg">
+                                    <li>History</li>
+                                    <li>Our Team</li>
+                                    <li>Blog</li>
+                                </ul>
+                            </li>
+                            <li>Careers</li>
+
+                            <li>About</li>
+                        </ul>
+                    </nav>
+                    <div class="flex flex-col gap-1 text-lg mt-4 md:hidden">
+                        <button class="p-2">Login</button>
+                        <button class="border-2 border-gray-primary rounded-xl p-2">Register</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden md:flex flex-row gap-5 text-lg mt-4 md:mt-0">
+                <button class="p-2">Login</button>
+                <button class="border-2 border-gray-primary rounded-xl p-2 px-5">Register</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-5 pb-20 font-epilogue lg:flex max-w-1280 mx-auto lg:pt-14">
+        <div class="lg:order-2 lg:flex lg:justify-center lg:w-8/12">
+            <img src="../images/image-hero-mobile.png" alt="Image Hero" class="w-full max-w-600 mx-auto lg:hidden">
+            <img src="../images/image-hero-desktop.png" alt="Image Hero" class="hidden lg:block lg:w-8/12">
+        </div>
+        <div class="text-center mt-10 px-5 lg:text-left lg:mt-32 ">
+            <h1 class="text-4xl font-bold lg:text-7xl">Make remote work</h1>
+            <p class="text-base text-gray-primary mt-3 font-medium max-w-600 mx-auto lg:text-lg lg:mt-8">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+            <button class="bg-black text-white border-2 px-6 py-3 text-lg rounded-xl mt-7 border-black transition-all hover:bg-transparent hover:text-black lg:mt-10">Learn more</button>
+
+            <div class="flex justify-center gap-7 mt-12 w-full">
+                <div>
+                    <img src="../images/client-databiz.svg" alt="logo" class="h-max">
+                </div>
+
+                <div>
+                    <img src="../images/client-audiophile.svg" alt="logo" class="h-max">
+                </div>
+
+                <div>
+                    <img src="../images/client-meet.svg" alt="logo" class="h-max">
+                </div>
+
+                <div>
+                    <img src="../images/client-maker.svg" alt="logo" class="h-max">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
