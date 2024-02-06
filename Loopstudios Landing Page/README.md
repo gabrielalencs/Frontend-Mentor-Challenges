@@ -39,5 +39,5 @@ Um projeto voltando as costumes. Usei apenas html css e js. Foi um projeto inter
  
 Para realizar o deploy da minha aplicação, utilizei a própria ferramenta de hospedagem do GitHub, o **GitHub Pages**
 <br>
-<a href="https://gabrielalencs.github.io/Frontend-Mentor-Challenges/9.%20Loopstudios%20Landing%20Page/">Clique Aqui </a> para visualizar a aplicação.
+<a href="https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Loopstudios%20Landing%20Page/">Clique Aqui </a> para visualizar a aplicação.
 
