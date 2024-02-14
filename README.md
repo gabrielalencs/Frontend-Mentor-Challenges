@@ -1,4 +1,4 @@
-# Frontend Mentor Challenge
+# Frontend Mentor Challenges
 <img src= "https://res.cloudinary.com/dz209s6jk/image/upload/v1585172856/Meta/meta-homepage.png">
 
 **Este reposiório é destinado para as minhas soluções dos desafios da plataforma Frontend Mentor**
