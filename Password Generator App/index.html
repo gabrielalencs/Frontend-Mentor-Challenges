@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Password Generator App</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon" />
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- Scripts JS -->
+    <script src="assets/js/scripts.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="container-title">Password Generator</h1>
+        </div>
+
+        <div class="container-password-generator">
+            <div class="container-password">
+                <span class="password-item" id="password">P4$5W0rD!</span>
+
+
+                <button class="btn-copy" id="copy-password">
+                    <img src="assets/images/icon-copy.svg" alt="btn copy password">
+                </button>
+            </div>
+
+            <div class="container-password-options">
+                <div>
+                    <div class="container-character-length">
+                        <span class="character-length-title">Character Length</span>
+                        <span class="character-length-item" id="character-length">0</span>
+                    </div>
+
+                    <input type="range" value="0" min="0" max="20" title="Character Length"
+                        class="character-length-range" id="length-range">
+                </div>
+
+                <div class="container-character-types">
+                    <div class="character-types">
+                        <span class="input-checkbox" id="checkbox-uppercase-letters" title="Uppercase Letters">
+                            <img src="assets/images/icon-check.svg" alt="">
+                        </span>
+
+                        <span class="character-types-title">Include Uppercase Letters</span>
+                    </div>
+
+                    <div class="character-types">
+                        <span class="input-checkbox" id="checkbox-lowercase-letters">
+                            <img src="assets/images/icon-check.svg" alt="">
+                        </span>
+
+                        <span class="character-types-title">Include Lowercase Letters</span>
+                    </div>
+
+                    <div class="character-types">
+                        <span class="input-checkbox" id="checkbox-numbers" title="Numbers">
+                            <img src="assets/images/icon-check.svg" alt="">
+                        </span>
+
+                        <span class="character-types-title">Include Numbers</span>
+                    </div>
+
+                    <div class="character-types">
+                        <span class="input-checkbox" id="checkbox-symbols" title="Symbols">
+                            <img src="assets/images/icon-check.svg" alt="">
+                        </span>
+
+                        <span class="character-types-title">Include Symbols</span>
+                    </div>
+                </div>
+
+                <div class="container-strenght-password">
+                    <span class="strenght-password-title">Strenght</span>
+
+                    <div class="password-level-container">
+                        <span class="password-level-title hide" id="password-strenght">Too Week</span>
+
+                        <div class="level-item-container">
+                            <span class="password-level-item"></span>
+                            <span class="password-level-item"></span>
+                            <span class="password-level-item"></span>
+                            <span class="password-level-item"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="button" class="button-generator-password" title="Password Generator Button"
+                        id="btn-generator">
+                        <span>Generate</span>
+
+                        <img src="assets/images/icon-arrow-right.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

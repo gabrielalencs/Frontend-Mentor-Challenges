@@ -1,0 +1,267 @@
+/* Global Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", monospace;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #18171f;
+}
+
+input[type='range'],
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+.container-password,
+.container-password-options {
+    background-color: #24232C;
+}
+
+.hide {
+    opacity: 0;
+}
+
+/* Main Container */
+
+.container {
+    width: 90%;
+    max-width: 54rem;
+    margin: 5rem auto;
+}
+
+.container-title {
+    font-size: 2.7rem;
+    color: #817D92;
+    text-align: center;
+}
+
+
+.container-password {
+    margin: 2.5rem 0;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.password-item {
+    font-size: 2.3rem;
+    color: #E6E5EA;
+    opacity: 0.25;
+    font-weight: bold;
+}
+
+.password-item.password-generated {
+    opacity: 100;
+}
+
+.btn-copy {
+    border: none;
+    background-color: transparent;
+}
+
+.btn-copy:hover {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1%) hue-rotate(231deg) brightness(102%) contrast(101%);
+}
+
+
+/* Container Generator Options  */
+
+.container-password-options {
+    padding: 2rem 1.5rem;
+}
+
+
+.container-character-length {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.character-length-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #E6E5EA;
+}
+
+.character-length-item {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #a4ffaf;
+}
+
+.character-length-range {
+    margin-top: 2.5rem;
+    background-color: #18171f;
+    width: 100%;
+    position: relative;
+    cursor: grab;
+}
+
+.character-length-range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: .8rem;
+    background-color: #18171f;
+}
+
+.character-length-range::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--boxAfterWidth, 0);
+    height: 100%;
+    background-color: #a4ffaf;
+    z-index: 1;
+}
+
+.character-length-range::-webkit-slider-thumb {
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 50%;
+    background-color: #E6E5EA;
+    position: relative;
+    bottom: .9rem;
+}
+
+.character-length-range::-webkit-slider-thumb:hover {
+    background-color: #18171F;
+    border: 2px solid #a4ffaf;
+}
+
+
+/* Container Character Types */
+
+.container-character-types {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.character-types {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.input-checkbox {
+    border: 2px solid #E6E5EA;
+    padding: .2rem .1rem;
+    display: grid;
+    place-items: center;
+    transition: all .1s;
+}
+
+.input-checkbox:hover {
+    border: 2px solid #a4ffaf;
+}
+
+.input-checkbox.checked {
+    background-color: #a4ffaf;
+    border: 2px solid #a4ffaf;
+}
+
+.input-checkbox img {
+    transition: all .2s;
+    transition: transform 0.3s ease 0.1s;
+    transform: scale(0);
+    padding: .1rem;
+}
+
+.input-checkbox.checked img {
+    transform: scale(1);
+}
+
+.character-types-title {
+    color: #E6E5EA;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+
+/* Container Strenght Password */
+
+.container-strenght-password {
+    background-color: #18171f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 2rem 1.5rem;
+}
+
+.strenght-password-title {
+    color: #817D92;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.password-level-container {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.password-level-title {
+    margin-top: 1.1rem;
+    font-size: 1.8rem;
+    color: #E6E5EA;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.password-level-item {
+    display: inline-block;
+    padding: 2rem .5rem;
+    border: 2px solid #E6E5EA;
+}
+
+.button-generator-password {
+    width: 100%;
+    margin-top: 3rem;
+    border: none;
+    background-color: #a4ffaf;
+    border: 2px solid #a4ffaf;
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.button-generator-password.block-btn {
+    pointer-events: none;
+}
+
+.button-generator-password:hover {
+    background-color: transparent;
+    color: #a4ffaf;
+}
+
+.button-generator-password img {
+    transition: all .3s;
+}
+
+.button-generator-password:disabled img {
+    filter: brightness(0) saturate(100%) invert(71%) sepia(2%) saturate(5167%) hue-rotate(84deg) brightness(94%) contrast(92%);
+}
+
+.button-generator-password:hover img {
+    filter: brightness(0) saturate(100%) invert(81%) sepia(37%) saturate(367%) hue-rotate(73deg) brightness(103%) contrast(105%);
+}
