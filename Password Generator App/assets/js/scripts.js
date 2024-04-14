@@ -22,7 +22,7 @@ const calculatePercentageBar = () => {
 
     const screenWidth = window.innerWidth;
 
-    const percentage = ( inputRangeElement.value - inputRangeElement.min ) / ( inputRangeElement.max - inputRangeElement.min );
+    const percentage = (inputRangeElement.value - inputRangeElement.min) / (inputRangeElement.max - inputRangeElement.min);
 
     screenWidth > 480
         ? inputRangeElement.style.setProperty('--boxAfterWidth', `${percentage * 95}%`)
@@ -63,7 +63,7 @@ const generateUpperCasePassword = (passwordLength) => {
 
     let generatedPassword = '';
 
-    for ( let index = 0; index < passwordLength; index++ ) {
+    for (let index = 0; index < passwordLength; index++) {
 
         let randomIndex = Math.floor(Math.random() * alphabet.length);
 
@@ -82,7 +82,7 @@ const generateLowerCasePassword = (passwordLength) => {
 
     let generatedPassword = '';
 
-    for ( let index = 0; index < passwordLength; index++ ) {
+    for (let index = 0; index < passwordLength; index++) {
 
         let randomIndex = Math.floor(Math.random() * alphabet.length);
 
@@ -101,7 +101,7 @@ const generatePasswordNumbers = (passwordLength) => {
 
     let generatedPassword = '';
 
-    for ( let index = 0; index < passwordLength; index++ ) {
+    for (let index = 0; index < passwordLength; index++) {
 
         let randomIndex = Math.floor(Math.random() * numbers.length);
 
@@ -120,7 +120,7 @@ const generatePasswordSymbols = (passwordLength) => {
 
     let generatedPassword = '';
 
-    for ( let index = 0; index < passwordLength; index++ ) {
+    for (let index = 0; index < passwordLength; index++) {
 
         let randomIndex = Math.floor(Math.random() * symbols.length);
 
@@ -143,7 +143,7 @@ const updatePasswordButtonState = () => {
 
         btn.addEventListener('click', () => {
 
-            if ( inputRangeElement.value > 0 ) {
+            if (inputRangeElement.value > 0) {
 
                 updatePasswordButtonState();
 
@@ -164,37 +164,38 @@ const generateFinalPassword = () => {
     let finalPasswordGenerated = '';
 
 
-    if ( btnUppercaseLetters.classList.contains('checked') ) {
+    if (btnUppercaseLetters.classList.contains('checked')) {
         let functionReturn = generateUpperCasePassword(inputRangeElement.value);
 
         passwordAllCharacters += functionReturn;
     }
 
-    if ( btnLowercaseLetters.classList.contains('checked') ) {
+    if (btnLowercaseLetters.classList.contains('checked')) {
         let functionReturn = generateLowerCasePassword(inputRangeElement.value);
 
         passwordAllCharacters += functionReturn;
     }
 
-    if ( btnNumbers.classList.contains('checked') ) {
+    if (btnNumbers.classList.contains('checked')) {
         let functionReturn = generatePasswordNumbers(inputRangeElement.value);
 
         passwordAllCharacters += functionReturn;
     }
 
 
-    if ( btnSymbols.classList.contains('checked') ) {
+    if (btnSymbols.classList.contains('checked')) {
         let functionReturn = generatePasswordSymbols(inputRangeElement.value);
 
         passwordAllCharacters += functionReturn;
     }
 
 
-    for ( let index = 0; index < inputRangeElement.value; index++ ) {
+    for (let index = 0; index < inputRangeElement.value; index++) {
         let randomIndex = Math.floor(Math.random() * passwordAllCharacters.length);
 
         finalPasswordGenerated += passwordAllCharacters[randomIndex];
     }
+
 
 
     password.classList.add('password-generated');
@@ -207,7 +208,7 @@ function checksPasswordLevelBasedRange() {
 
     passwordStrenghtText.classList.remove('hide');
 
-    if ( inputRangeElement.value <= 5 ) {
+    if (inputRangeElement.value <= 5) {
 
         elementStrenghtArr[0].style.backgroundColor = '#f64a4a';
         elementStrenghtArr[0].style.borderColor = '#f64a4a';
@@ -225,7 +226,7 @@ function checksPasswordLevelBasedRange() {
         passwordStrenghtText.textContent = 'TOO WEAK';
 
 
-    } else if ( inputRangeElement.value <= 10 ) {
+    } else if (inputRangeElement.value <= 10) {
 
         elementStrenghtArr[0].style.backgroundColor = '#fb7c58';
         elementStrenghtArr[0].style.borderColor = '#fb7c58';
@@ -243,7 +244,7 @@ function checksPasswordLevelBasedRange() {
         passwordStrenghtText.textContent = 'WEAK';
 
 
-    } else if ( inputRangeElement.value <= 15 ) {
+    } else if (inputRangeElement.value <= 15) {
 
         elementStrenghtArr[0].style.backgroundColor = '#f8cd65';
         elementStrenghtArr[0].style.borderColor = '#f8cd65';
@@ -261,7 +262,7 @@ function checksPasswordLevelBasedRange() {
         passwordStrenghtText.textContent = 'MEDIUM';
 
 
-    } else if ( inputRangeElement.value > 15 ) {
+    } else if (inputRangeElement.value > 15) {
 
         elementStrenghtArr.forEach(element => {
             element.style.backgroundColor = '#a4ffaf';
@@ -277,11 +278,15 @@ function checksPasswordLevelBasedRange() {
 
 const checkPasswordLevel = () => {
 
-    for ( const iterator of buttonsCheckArr ) {
+    for (const iterator of buttonsCheckArr) {
 
-        if (iterator.classList.contains('checked')) {
+        if (password.textContent > 0) {
 
-            checksPasswordLevelBasedRange();
+            if (iterator.classList.contains('checked')) {
+
+                checksPasswordLevelBasedRange();
+            }
+
         }
 
     }
@@ -302,7 +307,7 @@ btnPasswordGenerator.addEventListener('click', checkPasswordLevel);
 
 btnCopyPassword.addEventListener('click', () => {
 
-    if ( password.textContent !== 'P4$5W0rD!' ) {
+    if (password.textContent !== 'P4$5W0rD!') {
 
         const textToCopy = password.textContent;
 
@@ -317,7 +322,7 @@ btnCopyPassword.addEventListener('click', () => {
         document.execCommand('copy');
 
         document.body.removeChild(tempInput);
-        
+
     }
 
 });
