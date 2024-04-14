@@ -280,7 +280,6 @@ const checkPasswordLevel = () => {
 
     for (const iterator of buttonsCheckArr) {
 
-
         if (iterator.classList.contains('checked')) {
 
             checksPasswordLevelBasedRange();
