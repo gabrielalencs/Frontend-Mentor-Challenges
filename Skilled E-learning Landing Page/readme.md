@@ -41,6 +41,5 @@ De forma geral estou satisfeito com o resultado do projeto, mas pretendo evoluir
  
 Para realizar o deploy da minha aplicação, utilizei a própria ferramenta de hospedagem do GitHub, o **GitHub Pages**
 <br>
-<a href="https://gabrielalencs.github.io/Frontend-Mentor-Challenges/02.%20Skilled%20E-learning%20Landing%20Page//
-">Clique Aqui </a> para visualizar a aplicação.
+<a href="https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Skilled%20E-learning%20Landing%20Page/">Clique Aqui </a> para visualizar a aplicação.
 
