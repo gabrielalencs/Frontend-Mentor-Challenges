@@ -1,8 +1,8 @@
 # Frontend Mentor - E-commerce Product Page
 
 <div align="center">
-
- ![print-password-generator](https://github.com/gabrielalencs/Frontend-Mentor-Challenges/assets/127636935/256507eb-df04-4e08-a0bc-9ad973435f13)
+ 
+![projeto 11](https://github.com/gabrielalencs/Frontend-Mentor-Challenges/assets/127636935/1720c574-092b-49d2-9be4-ef57a6186182)
 </div>
 
 
