@@ -50,4 +50,4 @@ Fiquei satisfeito com o resultado final
  
 Para realizar o deploy da minha aplicação, utilizei a própria ferramenta de hospedagem do GitHub, o **GitHub Pages**
 <br>
-<a href="https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Password%20Generator%20App/">Clique Aqui </a> para visualizar a aplicação.
+<a href="https://gabrielalencs.github.io/Frontend-Mentor-Challenges/E-commerce%20Product%20Page/">Clique Aqui </a> para visualizar a aplicação.
