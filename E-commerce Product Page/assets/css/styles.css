@@ -1,0 +1,38 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+@layer base {
+    * {
+        @apply m-0 p-0 box-border font-kumbh;
+    }
+
+    .icon-cart {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(53%) saturate(2%) hue-rotate(165deg) brightness(117%) contrast(101%);
+    }
+
+    .icon-cart-2 {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(266deg) brightness(100%) contrast(102%);
+    }
+}
+
+@layer components {
+    .menu-mobile {
+        @apply absolute bg-white z-40 left-0 top-0 w-8/12 h-screen font-bold;
+    }
+
+    .li-item {
+        @apply cursor-pointer transition-all w-max;
+    }
+
+    .li-after {
+        @apply after:content-[''] after:block after:h-0.5 after:w-0 after:bg-orange-primary after:relative after:top-0 ;
+    }
+
+    .backdrop {
+        @apply absolute left-0 top-0 w-screen h-screen bg-black opacity-75 z-20;
+    }
+}

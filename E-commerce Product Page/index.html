@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/image/favicon-32x32.png" type="image/x-icon" />
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body class="min-h-screen relative">
+    <header class="p-7 flex justify-between items-center relative border-b-2 border-b-gray-100 max-w-1150 mx-auto">
+        <div class="flex items-center gap-20">
+            <div class="flex items-center gap-4">
+                <div class="min-tablet:hidden">
+                    <img src="assets/image/icon-menu.svg" alt="icone menu" class="cursor-pointer relative z-50"
+                        id="btn-menu-mobile">
+                </div>
+
+                <div>
+                    <img src="assets/image/logo.svg" alt="Logo">
+                </div>
+            </div>
+
+
+            <div>
+                <nav class="hidden min-tablet:flex" id="menu-mobile-container">
+                    <ul class="flex flex-col gap-4 px-10 pt-32 min-tablet:flex-row min-tablet:p-0">
+                        <li
+                            class="li-item li-after hover:after:w-full min-tablet:text-gray-primary min-tablet:hover:text-black">
+                            Collections
+                        </li>
+
+                        <li
+                            class="li-item li-after hover:after:w-full min-tablet:text-gray-primary min-tablet:hover:text-black">
+                            Men
+                        </li>
+
+                        <li
+                            class="li-item li-after hover:after:w-full min-tablet:text-gray-primary min-tablet:hover:text-black">
+                            Women
+                        </li>
+
+                        <li
+                            class="li-item li-after hover:after:w-full min-tablet:text-gray-primary min-tablet:hover:text-black">
+                            About
+                        </li>
+
+                        <li
+                            class="li-item li-after hover:after:w-full min-tablet:text-gray-primary min-tablet:hover:text-black">
+                            Contact
+                        </li>
+                    </ul>
+                </nav>
+
+                <div id="backdrop"></div>
+            </div>
+        </div>
+
+
+        <div class="flex items-center gap-7">
+            <div class="relative">
+                <img src="assets/image/icon-cart.svg" alt="icone cart" class="cursor-pointer w-7" id="shopping-cart">
+
+                <span
+                    class="absolute top-[-6] right-[-5] bg-orange-primary w-15 h-15 text-.7 rounded-full justify-center items-center text-white hidden"
+                    id="item-quantity-icon">0</span>
+            </div>
+
+            <div class="absolute top-28 right-10 w-360 h-64 shadow-2xl rounded-xl hidden z-50 bg-white"
+                id="shopping-cart-container">
+                <span class="font-semibold text-lg block p-6 border-b-2 border-b-gray-100 text-gray-primary">
+                    Cart
+                </span>
+
+                <div class="px-6">
+                    <span class="text-gray-primary flex font-bold text-lg justify-center items-center h-40 w-full"
+                        id="message-cart-empty">
+                        Your cart is empty
+                    </span>
+
+                    <div class="mt-7 flex-col justify-center h-32 text-gray-primary hidden" id="cart-items-info">
+                        <div class="flex items-center">
+                            <div class="w-12">
+                                <img src="assets/image/image-product-1.jpg" alt="product image" class="rounded-md">
+                            </div>
+
+                            <div class="ml-5">
+                                <p>
+                                    Fall Limited Edition Sneakers
+                                </p>
+
+                                <p>
+                                    $125.00 x <span id="items-in-cart">0</span> <span class="!text-black font-bold"
+                                        id="total-price-product">0</span>
+                                </p>
+                            </div>
+
+                            <div class="ml-5 cursor-pointer" id="btn-remove-cart">
+                                <img src="assets/image/icon-delete.svg" alt="icon delete">
+                            </div>
+                        </div>
+
+                        <div
+                            class="bg-orange-primary w-full mt-8 p-4 text-white rounded-lg font-bold transition-all hover:bg-opacity-50 text-center shadow-lg shadow-orange-200 cursor-pointer">
+                            <button type="button">Chekout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <img src="assets/image/image-avatar.png" alt="icone avatar" class="rounded-full w-12">
+            </div>
+        </div>
+    </header>
+
+    <main class="min-h-screen">
+        <div class="min-tablet:flex min-tablet:gap-8 min-tablet:max-w-1050 mx-auto mb-24">
+            <div class="swiper mySwiper min-tablet:!hidden">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/image/image-product-1.jpg" alt="image product">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/image/image-product-2.jpg" alt="image product">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/image/image-product-3.jpg" alt="image product">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/image/image-product-4.jpg" alt="image product">
+                    </div>
+                </div>
+                <div class="swiper-button-next !text-black !font-extrabold bg-white after:!text-2xl !w-11 rounded-full">
+                </div>
+                <div class="swiper-button-prev !text-black !font-extrabold bg-white after:!text-2xl !w-11 rounded-full">
+                </div>
+            </div>
+
+            <div class="hidden min-tablet:block min-tablet:px-5 min-tablet:mt-16">
+                <div>
+                    <div>
+                        <img src="assets/image/image-product-1.jpg" alt="image product" class="rounded-lg"
+                            id="container-main-image">
+                    </div>
+
+                    <div class="flex justify-center items-center gap-5 mt-8">
+                        <div class="w-20">
+                            <img src="assets/image/image-product-1.jpg" alt="image product"
+                                class="rounded-lg w-20 container-image">
+                        </div>
+
+                        <div class="w-20">
+                            <img src="assets/image/image-product-2.jpg" alt="image product"
+                                class="rounded-lg w-20	container-image">
+                        </div>
+
+                        <div class="w-20">
+                            <img src="assets/image/image-product-3.jpg" alt="image product"
+                                class="rounded-lg w-20	container-image">
+                        </div>
+
+                        <div class="w-20">
+                            <img src="assets/image/image-product-4.jpg" alt="image product"
+                                class="rounded-lg w-20	container-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="px-6 pt-16">
+                <div>
+                    <span class="text-sm uppercase text-orange-primary font-semibold tracking-widest">
+                        Sneaker Company
+                    </span>
+                    <h1 class="mt-5 font-bold text-4xl">
+                        Fall Limited Edition Sneakers
+                    </h1>
+                    <p class="mt-5 text-gray-primary">
+                        These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber
+                        outer
+                        sole, they’ll withstand everything the weather can offer.
+                    </p>
+                </div>
+                <div class="mt-7 flex justify-between items-center">
+                    <p class="text-3xl font-bold flex items-center gap-5">
+                        $125.00
+                        <span class="text-base text-orange-primary">50%</span>
+                    </p>
+                    <span class="line-through font-bold text-[#B6BCC8]">$250.00</span>
+                </div>
+                <div class="flex flex-col gap-5 min-desktop:flex-row min-desktop:items-center min-tablet:mt-14">
+                    <div
+                        class="py-4 mt-10 flex justify-center items-center gap-11 rounded-lg bg-[#f7f8fd] min-desktop:flex-1 min-tablet:mt-0">
+                        <img src="assets/image/icon-minus.svg" alt="" class="h-max cursor-pointer" id="remove-item">
+                        <span class="font-bold text-lg" id="quantity-items">
+                            0
+                        </span>
+                        <img src="assets/image/icon-plus.svg" alt="" class="h-max cursor-pointer" id="add-item">
+                    </div>
+                    <div class="flex justify-center items-center gap-5 py-4 w-full cursor-pointer rounded-lg bg-orange-primary shadow-lg shadow-orange-200 min-desktop:flex-1 min-desktop:!h-max"
+                        id="add-cart">
+                        <img src="assets/image/icon-cart.svg" alt="" class="icon-cart h-max">
+                        <span class=" text-white font-bold">Add to Cart</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class=" items-center flex-col absolute left-0 top-0 w-full h-full pt-32 bg-overlay max-tablet:hidden hidden"
+            id="container-overlay">
+            <div id="button-close-container">
+                <img src="assets/image/icon-close.svg" alt="" class="relative left-[16.5] icon-cart-2">
+            </div>
+
+            <div class="!w-550 mt-5">
+                <div>
+                    <img src="" alt="" class="rounded-lg" id="current-image">
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- JS Scripts -->
+    <script src="assets/js/scripts.js" defer></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
