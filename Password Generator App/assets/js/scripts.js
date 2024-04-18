@@ -23,13 +23,13 @@ const calculatePercentageBar = () => {
         inputRangeElement.style.setProperty('--boxAfterWidth', `${percentage * 92.5}%`);
 };
 
-// Função para exibir o valor da barra
+
 const showBarValue = () => {
     updatePasswordButtonState();
     numberCharacters.textContent = inputRangeElement.value;
 };
 
-// Marcar os botões como selecionados ou desmarcados
+
 buttonsCheckbox.forEach(btn => {
     btn.addEventListener('click', () => {
         btn.classList.toggle('checked');
@@ -37,13 +37,13 @@ buttonsCheckbox.forEach(btn => {
     });
 });
 
-// Função para atualizar o estado do botão de senha
+
 const updatePasswordButtonState = () => {
     const algumBotaoMarcado = buttonsCheckArr.some(btn => btn.classList.contains('checked'));
     btnPasswordGenerator.disabled = !algumBotaoMarcado || inputRangeElement.value <= 0;
 };
 
-// Gerar senha com caracteres em caixa alta
+
 const generateUpperCasePassword = (passwordLength) => {
     const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     let generatedPassword = '';
@@ -54,7 +54,7 @@ const generateUpperCasePassword = (passwordLength) => {
     return generatedPassword;
 };
 
-// Gerar senha com caracteres em caixa baixa (minúsculos)
+
 const generateLowerCasePassword = (passwordLength) => {
     const alphabet = 'abcdefghijklmnopqrstuvwxyz';
     let generatedPassword = '';
@@ -65,7 +65,7 @@ const generateLowerCasePassword = (passwordLength) => {
     return generatedPassword;
 };
 
-// Gerar senha com números
+
 const generatePasswordNumbers = (passwordLength) => {
     const numbers = '0123456789';
     let generatedPassword = '';
@@ -76,7 +76,7 @@ const generatePasswordNumbers = (passwordLength) => {
     return generatedPassword;
 };
 
-// Gerar senha com símbolos
+
 const generatePasswordSymbols = (passwordLength) => {
     const symbols = '!@#$%¨&*()_-+=`{[^~<>:;/?)';
     let generatedPassword = '';
@@ -87,7 +87,7 @@ const generatePasswordSymbols = (passwordLength) => {
     return generatedPassword;
 };
 
-// Gerar senha final
+
 const generateFinalPassword = () => {
     let passwordAllCharacters = '';
     let finalPasswordGenerated = '';
@@ -114,7 +114,7 @@ const generateFinalPassword = () => {
     password.textContent = finalPasswordGenerated;
 };
 
-// Verificar o nível da senha
+
 const checkPasswordLevel = () => {
     passwordStrenghtText.classList.remove('hide');
 
