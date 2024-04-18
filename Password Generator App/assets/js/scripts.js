@@ -1,6 +1,6 @@
-let password = document.getElementById('password');
+const password = document.getElementById('password');
 const btnCopyPassword = document.getElementById('copy-password');
-let numberCharacters = document.getElementById('character-length');
+const numberCharacters = document.getElementById('character-length');
 const inputRangeElement = document.getElementById('length-range');
 const buttonsCheckbox = document.querySelectorAll('.input-checkbox');
 const btnUppercaseLetters = document.getElementById('checkbox-uppercase-letters');
@@ -14,198 +14,108 @@ const btnPasswordGenerator = document.getElementById('btn-generator');
 const buttonsCheckArr = [...buttonsCheckbox];
 const elementStrenghtArr = [...elementsPasswordLevel];
 
-
-
-// functions
-
+// Função para calcular a porcentagem da barra de rolagem
 const calculatePercentageBar = () => {
-
     const screenWidth = window.innerWidth;
-
     const percentage = (inputRangeElement.value - inputRangeElement.min) / (inputRangeElement.max - inputRangeElement.min);
-
-    screenWidth > 480
-        ? inputRangeElement.style.setProperty('--boxAfterWidth', `${percentage * 95}%`)
-        : inputRangeElement.style.setProperty('--boxAfterWidth', `${percentage * 92.5}%`);
-
+    screenWidth > 480 ?
+        inputRangeElement.style.setProperty('--boxAfterWidth', `${percentage * 95}%`) :
+        inputRangeElement.style.setProperty('--boxAfterWidth', `${percentage * 92.5}%`);
 };
 
-
+// Função para exibir o valor da barra
 const showBarValue = () => {
-
     updatePasswordButtonState();
-
-    let barValue = inputRangeElement.value;
-
-    numberCharacters.textContent = barValue;
-
+    numberCharacters.textContent = inputRangeElement.value;
 };
 
-
-(function markButtonsChecked() {
-
-    buttonsCheckbox.forEach(btn => {
-
-        btn.addEventListener('click', () => {
-
-            btn.classList.toggle('checked');
-
-        });
-
+// Marcar os botões como selecionados ou desmarcados
+buttonsCheckbox.forEach(btn => {
+    btn.addEventListener('click', () => {
+        btn.classList.toggle('checked');
+        updatePasswordButtonState();
     });
+});
 
-}());
-
-
-const generateUpperCasePassword = (passwordLength) => {
-
-    const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-
-    let generatedPassword = '';
-
-    for (let index = 0; index < passwordLength; index++) {
-
-        let randomIndex = Math.floor(Math.random() * alphabet.length);
-
-        generatedPassword += alphabet[randomIndex];
-
-    }
-
-    return generatedPassword;
-
-};
-
-
-const generateLowerCasePassword = (passwordLength) => {
-
-    const alphabet = 'abcdefghijklmnopqrstuvwxyz';
-
-    let generatedPassword = '';
-
-    for (let index = 0; index < passwordLength; index++) {
-
-        let randomIndex = Math.floor(Math.random() * alphabet.length);
-
-        generatedPassword += alphabet[randomIndex];
-
-    }
-
-    return generatedPassword;
-
-};
-
-
-const generatePasswordNumbers = (passwordLength) => {
-
-    const numbers = '0123456789';
-
-    let generatedPassword = '';
-
-    for (let index = 0; index < passwordLength; index++) {
-
-        let randomIndex = Math.floor(Math.random() * numbers.length);
-
-        generatedPassword += numbers[randomIndex];
-
-    }
-
-    return generatedPassword;
-
-}
-
-
-const generatePasswordSymbols = (passwordLength) => {
-
-    const symbols = '!@#$%¨&*()_-+=`{[^~<>:;/?';
-
-    let generatedPassword = '';
-
-    for (let index = 0; index < passwordLength; index++) {
-
-        let randomIndex = Math.floor(Math.random() * symbols.length);
-
-        generatedPassword += symbols[randomIndex];
-
-    }
-
-    return generatedPassword;
-
-}
-
-
+// Função para atualizar o estado do botão de senha
 const updatePasswordButtonState = () => {
+    const algumBotaoMarcado = buttonsCheckArr.some(btn => btn.classList.contains('checked'));
+    btnPasswordGenerator.disabled = !algumBotaoMarcado || inputRangeElement.value <= 0;
+};
 
-    const algumBotaoMarcado = Array.from(buttonsCheckbox).some(btn => btn.classList.contains('checked'));
+// Gerar senha com caracteres em caixa alta
+const generateUpperCasePassword = (passwordLength) => {
+    const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let generatedPassword = '';
+    for (let index = 0; index < passwordLength; index++) {
+        let randomIndex = Math.floor(Math.random() * alphabet.length);
+        generatedPassword += alphabet[randomIndex];
+    }
+    return generatedPassword;
+};
 
-    btnPasswordGenerator.disabled = !algumBotaoMarcado;
+// Gerar senha com caracteres em caixa baixa (minúsculos)
+const generateLowerCasePassword = (passwordLength) => {
+    const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+    let generatedPassword = '';
+    for (let index = 0; index < passwordLength; index++) {
+        let randomIndex = Math.floor(Math.random() * alphabet.length);
+        generatedPassword += alphabet[randomIndex];
+    }
+    return generatedPassword;
+};
 
-    buttonsCheckbox.forEach(btn => {
+// Gerar senha com números
+const generatePasswordNumbers = (passwordLength) => {
+    const numbers = '0123456789';
+    let generatedPassword = '';
+    for (let index = 0; index < passwordLength; index++) {
+        let randomIndex = Math.floor(Math.random() * numbers.length);
+        generatedPassword += numbers[randomIndex];
+    }
+    return generatedPassword;
+};
 
-        btn.addEventListener('click', () => {
+// Gerar senha com símbolos
+const generatePasswordSymbols = (passwordLength) => {
+    const symbols = '!@#$%¨&*()_-+=`{[^~<>:;/?)';
+    let generatedPassword = '';
+    for (let index = 0; index < passwordLength; index++) {
+        let randomIndex = Math.floor(Math.random() * symbols.length);
+        generatedPassword += symbols[randomIndex];
+    }
+    return generatedPassword;
+};
 
-            if (inputRangeElement.value > 0) {
-
-                updatePasswordButtonState();
-
-            }
-
-        });
-
-    });
-
-}
-updatePasswordButtonState();
-
-
+// Gerar senha final
 const generateFinalPassword = () => {
-
     let passwordAllCharacters = '';
-
     let finalPasswordGenerated = '';
 
-
     if (btnUppercaseLetters.classList.contains('checked')) {
-        let functionReturn = generateUpperCasePassword(inputRangeElement.value);
-
-        passwordAllCharacters += functionReturn;
+        passwordAllCharacters += generateUpperCasePassword(inputRangeElement.value);
     }
-
     if (btnLowercaseLetters.classList.contains('checked')) {
-        let functionReturn = generateLowerCasePassword(inputRangeElement.value);
-
-        passwordAllCharacters += functionReturn;
+        passwordAllCharacters += generateLowerCasePassword(inputRangeElement.value);
     }
-
     if (btnNumbers.classList.contains('checked')) {
-        let functionReturn = generatePasswordNumbers(inputRangeElement.value);
-
-        passwordAllCharacters += functionReturn;
+        passwordAllCharacters += generatePasswordNumbers(inputRangeElement.value);
     }
-
-
     if (btnSymbols.classList.contains('checked')) {
-        let functionReturn = generatePasswordSymbols(inputRangeElement.value);
-
-        passwordAllCharacters += functionReturn;
+        passwordAllCharacters += generatePasswordSymbols(inputRangeElement.value);
     }
-
 
     for (let index = 0; index < inputRangeElement.value; index++) {
         let randomIndex = Math.floor(Math.random() * passwordAllCharacters.length);
-
         finalPasswordGenerated += passwordAllCharacters[randomIndex];
     }
 
-
-
     password.classList.add('password-generated');
-
     password.textContent = finalPasswordGenerated;
-
 };
 
-function checksPasswordLevelBasedRange() {
-
+// Verificar o nível da senha
+const checkPasswordLevel = () => {
     passwordStrenghtText.classList.remove('hide');
 
     if (inputRangeElement.value <= 5) {
@@ -272,53 +182,21 @@ function checksPasswordLevelBasedRange() {
         passwordStrenghtText.textContent = 'STRONG';
 
     }
-
-}
-
-
-const checkPasswordLevel = () => {
-
-    for (const iterator of buttonsCheckArr) {
-
-        if (iterator.classList.contains('checked')) {
-
-            checksPasswordLevelBasedRange();
-        }
-
-    }
-
 };
 
-
-
-// events
-
+// Eventos
 inputRangeElement.addEventListener("input", calculatePercentageBar);
-
 inputRangeElement.addEventListener("input", showBarValue);
-
 btnPasswordGenerator.addEventListener('click', generateFinalPassword);
-
 btnPasswordGenerator.addEventListener('click', checkPasswordLevel);
-
 btnCopyPassword.addEventListener('click', () => {
-
     if (password.textContent !== 'P4$5W0rD!') {
-
         const textToCopy = password.textContent;
-
         const tempInput = document.createElement('input');
-
         tempInput.value = textToCopy;
-
         document.body.appendChild(tempInput);
-
         tempInput.select();
-
         document.execCommand('copy');
-
         document.body.removeChild(tempInput);
-
     }
-
 });
