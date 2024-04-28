@@ -2,7 +2,8 @@
 
 <div align="center">
 
- ![print-password-generator](https://github.com/gabrielalencs/Frontend-Mentor-Challenges/assets/127636935/256507eb-df04-4e08-a0bc-9ad973435f13)
+![print projeto](https://github.com/gabrielalencs/Frontend-Mentor-Challenges/assets/127636935/9862138c-6745-443a-8201-6fd2e5664c77)
+
 </div>
 
 
@@ -46,5 +47,5 @@ Resolvi esse desafio sem grandes problemas e fiquei bastante satisfeito com o re
 
 Para realizar o deploy da minha aplicação, utilizei a própria ferramenta de hospedagem do GitHub, o **GitHub Pages**
 <br>
-<a href="https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Password%20Generator%20App/">Clique Aqui </a> para visualizar a aplicação.
+<a href="https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Advice%20Generator%20App/">Clique Aqui </a> para visualizar a aplicação.
 
