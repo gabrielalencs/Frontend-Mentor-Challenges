@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="assets/css/app.css" />
+  <!-- JS Scripts -->
+  <script src="assets/js/scripts.js" defer></script>
+
+  <title>Frontend Mentor | Advice generator app</title>
+</head>
+<body>
+    <div class="container-generator">
+        <p class="advice-number">
+            Advice #<span>1</span>
+        </p>
+
+        <div class="container-advice">
+            <p class="advice-text">
+                No advice here, roll the dice!
+            </p>
+        </div>
+
+        <picture class="divider-container">
+            <source media="(max-width: 768px)" srcset="assets/images/pattern-divider-mobile.svg">
+            <source media="(min-width: 768px)" srcset="assets/images/pattern-divider-desktop.svg">
+            <img src="assets/images/pattern-divider-mobile.svg" alt="">
+        </picture>
+
+        <button type="button" class="button-container">
+            <div class="button-generator-advice">
+                <img src="assets/images/icon-dice.svg" alt="Icon Dice">
+            </div>
+        </button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/* reset */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: #1F2632;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+/* container */
+.container-generator {
+  background-color: #3a4252;
+  padding: 30px 40px 0;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+}
+.container-generator .advice-number {
+  color: #52FFA8;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 14px;
+}
+.container-generator .container-advice {
+  margin-top: 20px;
+}
+.container-generator .advice-text {
+  font-size: 27px;
+  color: #CEE3E9;
+  font-weight: bold;
+}
+.container-generator .advice-text::before {
+  content: "“";
+}
+.container-generator .advice-text::after {
+  content: "”";
+}
+.container-generator .divider-container {
+  display: block;
+  margin-top: 30px;
+}
+.container-generator .divider-container img {
+  width: 100%;
+}
+.container-generator .button-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 30px;
+  background-color: #52FFA8;
+  width: max-content;
+  padding: 18px;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.container-generator .button-container:hover {
+  box-shadow: 0 1px 30px #52FFA8, 0 1px 30px #52FFA8;
+}
+.container-generator .button-generator-advice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-generator .button-container.waiting {
+  background-color: #FF5833;
+  animation: pulse-shadow 600ms linear infinite alternate;
+}
+.container-generator .button-container.waiting img {
+  animation: to-spin 1.5s infinite;
+}
+@keyframes to-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(90deg);
+  }
+  60% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+@keyframes pulse-shadow {
+  0% {
+    box-shadow: 0 1px 30px #FF5833, 0 1px 30px #FF5833;
+  }
+  100% {
+    box-shadow: 0 1px 0 #FF5833, 0 1px 0 #FF5833;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
