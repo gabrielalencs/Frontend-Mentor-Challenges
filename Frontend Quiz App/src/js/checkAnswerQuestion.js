@@ -105,13 +105,13 @@ const markRightWrongAlternatives = (correctAlternativeOne, correctAlternativeTwo
             containerIconCorrectOrWrong.forEach(containerIcon => {
                 containerIcon.classList.remove('hidden');
 
-                iconeImg.src = './../src/images/icon-correct.svg';
+                iconeImg.src = '../images/icon-correct.svg';
             });
-
+           
         } else {
             alternative.classList.add('error');
 
-            iconeImg.src = './../src/images/icon-error.svg';
+            iconeImg.src = '../images/icon-error.svg';
         }
     });
 

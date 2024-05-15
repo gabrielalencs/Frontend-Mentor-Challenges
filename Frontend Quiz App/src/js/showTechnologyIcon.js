@@ -9,10 +9,10 @@ const nameTechnologyResult = document.getElementById('name-tech-result');
 // * shows the icon of the chosen quiz in the header and in the result container
 export const showIcon = (tecnology) => {
     const icons = [
-        { src: './../src/images/icon-html.svg', text: 'HTML' },
-        { src: './../src/images/icon-css.svg', text: 'CSS' },
-        { src: './../src/images/icon-js.svg', text: 'JavaScript' },
-        { src: './../src/images/icon-accessibility.svg', text: 'Accessibility' }
+        { src: '../images/icon-html.svg', text: 'HTML' },
+        { src: '../images/icon-css.svg', text: 'CSS' },
+        { src: '../images/icon-js.svg', text: 'JavaScript' },
+        { src: '../images/icon-accessibility.svg', text: 'Accessibility' }
     ];
 
     containerHeaderIcon.classList.remove('hidden')
