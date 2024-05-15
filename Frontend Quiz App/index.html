@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="src/images/favicon-32x32.png" type="image/x-icon" />
+    <!-- Styles Link -->
+    <link rel="stylesheet" href="src/css/tailwind.css" />
+    <!-- Scripts Link -->
+    <script src="src/js/index.js" type="module" defer></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet" />
+
+    <title>Frontend Mentor | Frontend Quiz App</title>
+</head>
+
+<body>
+    <main
+        class="bg-slate-700 font-rubik pb-32 px-7 min-h-screen overflow-x-hidden duration-100 container-background-images lg:px-10 dark:bg-white-primary">
+      
+        <div class="flex justify-between pt-7 max-w-1536 mx-auto lg:pt-14 xl:pt-16" >
+          
+            <div class="hidden" id="container-icon-header">
+
+                <div class="flex items-center gap-4">
+
+                    <div class="bg-orange-icon p-1 rounded-md">
+                        <img src="" alt="" class="h-8">
+                    </div>
+
+                    <span class="name-tech"></span>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <label class="switch">
+
+                    <input type="checkbox" id="btn-dark-mode">
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+        </div>
+
+        <div class="mt-10 max-w-1536 mx-auto duration-200 relative z-30 lg:mt-16 lg:flex xl:mt-16" id="available-quizzes-container">
+
+            <div class="md:text-center lg:text-left lg:flex-1">
+
+                <h1 class="text-4xl text-white md:text-6xl xl:text-7xl dark:text-slate-700">
+                    Welcome to the
+                    <br>
+                    <span class="font-semibold">Frontend Quiz!</span>
+                </h1>
+
+                <p class="text-lg text-slate-500 italic mt-3 md:text-xl lg:text-2xl lg:mt-6 dark:text-slate-700">
+                    Pick a subject to get started.
+                </p>
+
+            </div>
+
+
+            <div class="mt-12 pb-5 flex flex-col items-center gap-4 lg:gap-2 lg:flex-1 lg:items-start lg:mt-0">
+
+                <div class="container-name-tech">
+
+                    <div class="bg-orange-icon p-1 rounded-md">
+
+                        <img src="src/images/icon-html.svg" alt="icon html" class="h-8">
+
+                    </div>
+
+                    <span class="name-tech">HTML</span>
+
+                </div>
+
+                <div class="container-name-tech">
+
+                    <div class="bg-green-icon p-1 rounded-md">
+
+                        <img src="src/images/icon-css.svg" alt="icon css" class="h-8">
+
+                    </div>
+
+                    <span class="name-tech">CSS</span>
+
+                </div>
+
+                <div class="container-name-tech">
+
+                    <div class="bg-blue-icon p-1 rounded-md">
+
+                        <img src="src/images/icon-js.svg" alt="icon js" class="h-8">
+
+                    </div>
+
+                    <span class="name-tech">JavaScript</span>
+
+                </div>
+
+                <div class="container-name-tech">
+
+                    <div class="bg-purple-icon p-1 rounded-md">
+
+                        <img src="src/images/icon-accessibility.svg" alt="icon accessibility" class="h-8">
+
+                    </div>
+
+                    <span class="name-tech">Accessibility</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="mt-10 px-7 max-w-1536 mx-auto absolute duration-200 left-[-50] right-[-50] top-16 w-full opacity-0 lg:flex lg:gap-16 lg:px-10 2xl:px-0 xl:mt-14" id="quiz-questions-container">
+
+            <div class="lg:flex-1 lg:mt-28 lg:flex lg:flex-col">
+
+                <div class="md:text-center">
+
+                    <p class="text-slate-500 italic md:text-xl lg:text-2xl dark:text-slate-700">
+                        Question <span id="question-number">1</span> of 10
+                    </p>
+
+                    <p class="mt-2 text-xl text-white font-semibold sm:text-2xl md:text-4xl lg:mt-5 xl:text-5xl dark:text-slate-700" id="main-question"></p>
+
+                </div>
+
+                <div class="mt-10 relative">
+
+                    <div class="bg-blue-dark h-[.35] w-full p-1 rounded-lg md:w-600 lg:w-full ">
+
+                        <div class="bg-purple-600 h-1 absolute bottom-[.15] w-0 duration-200 rounded-lg dark:bg-white-primary" id="bar-progesss"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mt-12 flex flex-col items-center gap-4 md:gap-5 lg:flex-1">
+
+                <div class="container-options">
+
+                    <div class="flex items-center gap-5 !bg-transparent">
+
+                        <div class="bg-white-primary text-slate-500 py-2 px-4 rounded-md duration-200 letter">
+                            
+                            <span class="text-lg font-bold">A</span>
+
+                        </div>
+
+                        <p class="text-white font-medium sm:text-lg md:text-xl dark:text-blue-dark" id="first-alternative">
+                            
+                        </p>
+
+                    </div>
+
+                    <div class="!bg-transparent hidden icon-container-option">
+
+                        <img src="" alt="" class="icon">
+                        
+                    </div>
+
+                </div>
+
+                <div class="container-options">
+
+                    <div class="flex items-center gap-5 !bg-transparent">
+
+                        <div class="bg-white-primary text-slate-500 py-2 px-4 rounded-md duration-200 letter">
+                            
+                            <span class="text-lg font-bold">B</span>
+
+                        </div>
+
+                        <p class="text-white font-medium sm:text-lg md:text-xl dark:text-blue-dark" id="second-alternative">
+                            
+                        </p>
+                        
+                    </div>
+
+                    <div class="!bg-transparent hidden icon-container-option">
+
+                        <img src="" alt="" class="icon">
+                        
+                    </div>
+
+                </div>
+
+                <div class="container-options">
+
+                    <div class="flex items-center gap-5 !bg-transparent">
+
+                        <div class="bg-white-primary text-slate-500 py-2 px-4 rounded-md duration-200 letter">
+                            
+                            <span class="text-lg font-bold">C</span>
+
+                        </div>
+
+                        <p class="text-white font-medium sm:text-lg md:text-xl dark:text-blue-dark" id="third-alternative">
+                            
+                        </p>
+                        
+                    </div>
+
+                    <div class="!bg-transparent hidden icon-container-option">
+
+                        <img src="" alt="" class="icon">
+                        
+                    </div>
+
+                </div>
+
+                <div class="container-options">
+
+                    <div class="flex items-center gap-5 !bg-transparent">
+
+                        <div class="bg-white-primary text-slate-500 py-2 px-4 rounded-md duration-200 letter">
+                            
+                            <span class="text-lg font-bold">D</span>
+
+                        </div>
+
+                        <p class="text-white font-medium sm:text-lg md:text-xl dark:text-blue-dark" id="fourth-alternative">
+                            
+                        </p>
+                        
+                    </div>
+
+                    <div class="!bg-transparent hidden icon-container-option">
+
+                        <img src="" alt="" class="icon">
+                        
+                    </div>
+
+                </div>
+
+                <button class="button-primary" id="submit-answer-btn">
+                    Submit Answer
+                </button>
+
+                <button class="button-primary hidden" id="next-question-btn">
+                    Next Question
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="mt-10 px-7 max-w-1536 mx-auto absolute duration-200 left-[-50] right-[-50] top-28 w-full opacity-0 lg:mt-16 lg:flex xl:mt-16 2xl:px-0" id="punctuations-container">
+            
+            <div class="lg:flex-1">
+
+                <h1 class="text-center text-4xl text-white md:text-6xl lg:text-left lg:text-7xl dark:text-slate-700">
+                    Quiz completed
+                    <br class="hidden lg:block">
+                    <span class="font-semibold">You scored...</span>
+                </h1>
+
+            </div>
+
+            <div class="mt-10 md:text-center lg:text-left lg:mt-0 lg:flex-1">
+
+                <div class="bg-blue-dark text-center w-full rounded-lg py-10 md:w-600 md:mx-auto lg:rounded-xl lg:w-full dark:bg-white">
+
+                    <div class="flex justify-center items-center gap-5">
+
+                        <div class="bg-purple-icon p-1 rounded-md">
+                            <img src="" alt="" id="container-icon-result">
+                        </div>
+
+                        <span class="name-tech" id="name-tech-result"></span>
+
+                    </div>
+
+                    <div class="mt-8 flex flex-col w-max mx-auto">
+
+                        <span class="text-9xl text-white font-bold dark:text-slate-700" id="correct-questions">0</span>
+
+                        <span class="text-lg text-slate-500 italic md:text-xl lg:text-2xl dark:text-slate-700">out of 10</span>
+
+                    </div>
+
+                </div>
+
+                <button class="button-primary " id="play-again-btn">
+                    Play Again
+                </button>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
