@@ -14,7 +14,7 @@ Além disso, o Frontend Mentor também oferece uma comunidade ativa de desenvolv
 
 ## 🚀 Desafios concluídos
 
-|Nome|Repositório|Tecnologias / Conceitos |
+|Nome|Repositório|Tecnologias |
 |---|---|---|
 |  [Skilled E-learning Landing Page](https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Skilled%20E-learning%20Landing%20Page/) |[Repositório do projeto](https://github.com/gabrielalencs/Frontend-Mentor-Challenges/tree/main/Skilled%20E-learning%20Landing%20Page)| HTML, CSS, SCSS |
 | [Sunnyside Agency Landing Page](https://gabrielalencs.github.io/Frontend-Mentor-Challenges/Sunnyside%20Agency%20Landing%20Page/) |[Repositório do projeto](https://github.com/gabrielalencs/Frontend-Mentor-Challenges/tree/main/Sunnyside%20Agency%20Landing%20Page) | HTML, CSS, BOOTSTRAP, SCSS|
