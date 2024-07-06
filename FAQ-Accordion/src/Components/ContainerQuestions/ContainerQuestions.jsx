@@ -6,7 +6,7 @@ const ContainerQuestions = () => {
         <div className={styles.containerFaqs}>
             <div className={styles.titleContainer}>
                 <img
-                    src="./src/assets/images/icon-star.svg"
+                    src="../../src/assets/images/icon-star.svg"
                     alt="icon star"
                     className={styles.star} 
                 />

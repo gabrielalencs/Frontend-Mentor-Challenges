@@ -2,8 +2,8 @@ import React from 'react';
 import styles from './Questions.module.css';
 
 const Questions = ({title, description}) => {
-    const srcButtonMinus = './src/assets/images/icon-minus.svg';
-    const srcButtonPlus = './src/assets/images/icon-plus.svg';
+    const srcButtonMinus = '../../src/assets/images/icon-minus.svg';
+    const srcButtonPlus = '../../src/assets/images/icon-plus.svg';
 
     const [isExpanded, setIsExpanded] = React.useState(false);
 
