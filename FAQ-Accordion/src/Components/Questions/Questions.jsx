@@ -2,8 +2,8 @@ import React from 'react';
 import styles from './Questions.module.css';
 
 const Questions = ({title, description}) => {
-    const srcButtonMinus = '../../src/assets/images/icon-minus.svg';
-    const srcButtonPlus = '../../src/assets/images/icon-plus.svg';
+    const srcButtonMinus = './assets/images/icon-minus.svg';
+    const srcButtonPlus = './assets/images/icon-plus.svg';
 
     const [isExpanded, setIsExpanded] = React.useState(false);
 
@@ -19,10 +19,11 @@ const Questions = ({title, description}) => {
                 </h3>
 
                 <div>
-                    <img 
+                    <img src="./assets/images/icon-minus.svg" alt="" />
+                     {/* <img 
                         src={isExpanded ? srcButtonMinus : srcButtonPlus} 
                         alt="icon" 
-                    />
+                    />  */}
                 </div>
             </div>
 
