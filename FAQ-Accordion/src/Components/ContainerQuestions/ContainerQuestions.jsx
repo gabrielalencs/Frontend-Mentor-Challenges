@@ -1,13 +1,12 @@
 import Questions from '../Questions/Questions';
 import styles from './ContainerQuestions.module.css';
-import iconStar from '../../assets/images/icon-star.svg';
 
 const ContainerQuestions = () => {
     return (
         <div className={styles.containerFaqs}>
             <div className={styles.titleContainer}>
                 <img
-                    src={iconStar}
+                    src='../../assets/images/icon-star.svg'
                     alt="icon star"
                     className={styles.star} 
                 />
