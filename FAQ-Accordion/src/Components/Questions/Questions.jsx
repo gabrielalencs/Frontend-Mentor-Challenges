@@ -19,7 +19,6 @@ const Questions = ({title, description}) => {
                 </h3>
 
                 <div>
-                    <img src="./assets/images/icon-minus.svg" alt="" />
                      <img 
                         src={isExpanded ? iconMinus : iconPlus} 
                         alt="icon" 
