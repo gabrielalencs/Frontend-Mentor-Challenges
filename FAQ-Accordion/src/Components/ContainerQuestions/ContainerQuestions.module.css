@@ -1,0 +1,33 @@
+.containerFaqs{
+    width: 90%;
+    max-width: 60rem;
+    margin: 15rem auto 10rem;
+    padding: 2.5rem;
+    background-color: #FFF;
+    box-shadow: 0 1.1rem 2rem 0 #e8c9eb;
+    border-radius: 1rem;
+}
+
+.containerFaqs div:last-child {
+    border-bottom: none;
+}
+
+.titleContainer {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.star {
+    width: 3.5rem;
+}
+
+.title {
+    font-size: 3.5rem;
+}
+
+@media (width >= 768px) {
+    .title {
+        font-size: 5.5rem;
+    }
+}

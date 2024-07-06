@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url('./assets/images/background-pattern-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #f9f0ff;
+}
+
+@media (width >= 768px) {
+    body {
+        background-image: url('./assets/images/background-pattern-desktop.svg');
+    }
+}

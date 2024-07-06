@@ -1,0 +1,77 @@
+.container {
+    border-bottom: 1px solid #f3f3f3;
+    padding: 2.5rem 0;
+}
+
+.titleContainer {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    cursor: pointer;
+}
+
+.titleContainer div {
+    cursor: pointer;
+}
+
+@media (width >= 768px) {
+    .titleContainer div img {
+        width: 4rem;
+    }
+}
+
+.title {
+    font-size: 1.8rem;
+    transition: all .3s;
+    position: relative;
+    color: #2f1533;
+
+    &:hover {
+        color: #ad28eb;
+    }
+}
+
+.description {
+    margin-top: 2rem;
+    color: #8c6991;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.hidden {
+    display: none;
+    animation: none;
+}
+
+.show {
+    display: block;
+    animation: flipInX .5s forwards;
+}
+
+@keyframes flipInX {
+    0% {
+        transform: perspective(400px) rotateX(90deg);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    
+    40% {
+        transform: perspective(400px) rotateX(-20deg);
+        animation-timing-function: ease-in;
+    }
+
+    60% {
+        transform: perspective(400px) rotateX(10deg);
+        opacity: 1;
+    }
+
+    80% {
+        transform: perspective(400px) rotateX(-5deg);
+    }
+    
+    100% {
+        transform: perspective(400px);
+    }
+}
