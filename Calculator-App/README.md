@@ -1,4 +1,4 @@
-# Frontend Mentor - Password Generator App
+# Frontend Mentor - Calculator App
 
 <div align="center">
   
