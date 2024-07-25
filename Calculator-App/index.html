@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="assets/css/app.min.css" />
+    <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+    <div class="containerCalc">
+        <div class="headerCalc">
+            <h1>Calc</h1>
+
+            <div class="toggleTheme">
+                <span class="nameTheme">Theme</span>
+
+                <div class="containerToggleTheme">
+                    <div class="toggleThemeNumbers">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                    </div>
+
+                    <div class="containerInputs">
+                        <input type="radio" id="switch1" name="switch" checked />
+                        <label for="switch1"></label>
+
+                        <input type="radio" id="switch2" name="switch" />
+                        <label for="switch2"></label>
+
+                        <input type="radio" id="switch3" name="switch" />
+                        <label for="switch3"></label>
+
+                        <div class="buttonElement"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerResults">
+            <div class="currentResults">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="containerOperations">
+            <button class="element">7</button>
+            <button class="element">8</button>
+            <button class="element">9</button>
+            <button class="del">Del</button>
+            <button class="element">4</button>
+            <button class="element">5</button>
+            <button class="element">6</button>
+            <button class="element">+</button>
+            <button class="element">1</button>
+            <button class="element">2</button>
+            <button class="element">3</button>
+            <button class="element">-</button>
+            <button class="element">.</button>
+            <button class="element">0</button>
+            <button class="element">/</button>
+            <button class="element">*</button>
+            <button class="reset">Reset</button>
+            <button class="equal">=</button>
+        </div>
+    </div>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

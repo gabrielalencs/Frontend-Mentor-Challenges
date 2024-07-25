@@ -1,0 +1,21 @@
+.containerResults {
+    margin-top: 30px;
+    background-color: #181f33;
+    padding: 30px;
+    text-align: right;
+    color: #FFF;
+    border-radius: 16px;
+    min-height: 120px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    .currentResults {
+        font-size: 48px;
+        font-weight: 700;
+
+        span {
+            word-break: break-word;
+        }
+    }
+}

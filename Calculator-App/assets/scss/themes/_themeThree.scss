@@ -1,0 +1,53 @@
+.themeThree {
+    background-color: #17062a;
+}
+
+.themeThree .headerCalc h1,
+.themeThree .headerCalc .nameTheme, 
+.themeThree .headerCalc .toggleThemeNumbers {
+    color: #ffe53d;
+}
+
+.themeThree .buttonElement {
+    background-color: #93FFF8;
+}
+
+.themeThree .containerInputs,
+.themeThree .containerOperations {
+    background-color: #1e0936;
+}
+
+.themeThree .containerResults {
+    background-color: #1e0936;
+    color: #ffe53d;
+
+}
+
+.themeThree .element {
+    background-color: #331c4d;
+    box-shadow: inset 0px -4px 0px #881c9e;
+    color: #ffe53d;
+
+    &:hover {
+        background-color: #6C34AC;
+    }
+}
+
+.themeThree .del,
+.themeThree .reset {
+    background-color: #58077d;
+    box-shadow: inset 0px -4px 0px #bc15f4;
+
+    &:hover {
+        background-color: #7b0baf;
+    }
+}
+
+.themeThree .equal {
+    background-color: #00e0d1;
+    box-shadow: inset 0px -4px 0px #6cf9f2;
+
+    &:hover {
+        background-color: #00ffee;
+    }
+}

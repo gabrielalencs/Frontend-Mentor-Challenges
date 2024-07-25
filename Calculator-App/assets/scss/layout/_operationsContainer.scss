@@ -1,0 +1,86 @@
+.containerOperations {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 17px;
+    background-color: #242d44;
+    padding: 20px 15px;
+    border-radius: 16px;
+
+    @media (width >=768px) {
+        padding: 30px;
+        gap: 24px;
+        padding: 30px;
+    }
+
+    .element,
+    .equal,
+    .del,
+    .reset {
+        height: 60px;
+        background: #EAE3DC;
+        box-shadow: inset 0px -4px 0px #B3A497;
+        border-radius: 10px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        color: #434A59;
+        font-weight: 700;
+        font-size: 30px;
+        transition: all .2s;
+
+        @media (width >= 768px) {
+            font-size: 40px;
+            height: 65px;
+        }
+
+        &:hover {
+            background-color: #FFFFFE;
+        }
+
+        &:active {
+            transform: translateY(2px);
+        }
+    }
+
+    .del,
+    .reset {
+        background-color: #647198;
+        box-shadow: inset 0px -4px 0px #414E73;
+        color: white;
+        font-size: 19px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        @media (width >=768px) {
+            font-size: 25px;
+        }
+    }
+
+    .del:hover {
+        background-color: #A2B2E1;
+    }
+
+    .reset {
+        grid-column: 1 / span 2;
+
+        &:hover {
+            background-color: #A2B2E1;
+        }
+    }
+
+    .equal {
+        grid-column: 3 / span 2;
+        background-color: #d03f2f;
+        box-shadow: inset 0px -4px 0px #93261A;
+        color: white;
+
+        &:active {
+            background-color: #F96B5B;
+        }
+
+        &:hover {
+            background-color: #F96B5B;
+        }
+    }
+}

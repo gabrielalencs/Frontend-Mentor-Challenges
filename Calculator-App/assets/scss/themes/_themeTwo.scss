@@ -1,0 +1,47 @@
+.themeTwo {
+    background-color: #e6e6e6;
+}
+
+.themeTwo .headerCalc h1,
+.themeTwo .headerCalc .nameTheme, 
+.themeTwo .headerCalc .toggleThemeNumbers {
+    color: #000;
+}
+
+.themeTwo .containerInputs,
+.themeTwo .containerOperations {
+    background-color: #D2CDCD;
+}
+
+.themeTwo .containerResults {
+    background-color: #eeeeee;
+    color: #36362C;
+}
+
+.themeTwo .element {
+    background-color: #e5e4e1;
+    box-shadow: inset 0px -4px 0px #a79e91;
+
+    &:hover {
+        background-color: #FFFFFF;
+    }
+}
+
+.themeTwo .del,
+.themeTwo .reset {
+    background-color: #378187;
+    box-shadow: inset 0px -4px 0px #1b6066;
+
+    &:hover {
+        background-color: #62B5BC;
+    }
+}
+
+.themeTwo .equal {
+    background-color: #c85402;
+    box-shadow: inset 0px -4px 0px #873901;
+
+    &:hover {
+        background-color: #FF8A38;
+    }
+}

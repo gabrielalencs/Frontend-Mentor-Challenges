@@ -1,0 +1,84 @@
+.headerCalc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+        text-transform: lowercase;
+        font-size: 40px;
+        color: #FFF;
+        font-weight: 600;
+    }
+
+    .toggleTheme {
+        display: flex;
+        align-items: flex-end;
+        gap: 15px;
+    }
+
+    .nameTheme {
+        text-transform: uppercase;
+        color: #FFF;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 15px;
+        position: relative;
+        bottom: 2px;
+    }
+
+    .containerToggleTheme {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .toggleThemeNumbers {
+        display: flex;
+        justify-content: space-evenly;
+        color: #FFF;
+        font-weight: 500;
+    }
+
+    .containerInputs {
+        background-color: #242D44;
+        border-radius: 13px;
+        width: 71px;
+        height: 26px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        input {
+            opacity: 0;
+            border: 0px;
+            width: 17px;
+            height: 30px;
+            vertical-align: middle;
+        }
+    }
+
+    .buttonElement {
+        height: 17px;
+        width: 17px;
+        border-radius: 50%;
+        background-color: #d03f2f;
+        position: absolute;
+        left: 9px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all .3s;
+    }
+
+    #switch1:checked~.buttonElement {
+        left: 9px;
+    }
+
+    #switch2:checked~.buttonElement {
+        left: 27px;
+    }
+
+    #switch3:checked~.buttonElement {
+        left: 44px;
+    }
+}

@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+  transition: all 0.2s;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3a4663;
+}
+
+.containerCalc {
+  width: 90%;
+  max-width: 540px;
+  margin: 60px auto;
+}
+
+.headerCalc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerCalc h1 {
+  text-transform: lowercase;
+  font-size: 40px;
+  color: #FFF;
+  font-weight: 600;
+}
+.headerCalc .toggleTheme {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+}
+.headerCalc .nameTheme {
+  text-transform: uppercase;
+  color: #FFF;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 15px;
+  position: relative;
+  bottom: 2px;
+}
+.headerCalc .containerToggleTheme {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.headerCalc .toggleThemeNumbers {
+  display: flex;
+  justify-content: space-evenly;
+  color: #FFF;
+  font-weight: 500;
+}
+.headerCalc .containerInputs {
+  background-color: #242D44;
+  border-radius: 13px;
+  width: 71px;
+  height: 26px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.headerCalc .containerInputs input {
+  opacity: 0;
+  border: 0px;
+  width: 17px;
+  height: 30px;
+  vertical-align: middle;
+}
+.headerCalc .buttonElement {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background-color: #d03f2f;
+  position: absolute;
+  left: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+}
+.headerCalc #switch1:checked ~ .buttonElement {
+  left: 9px;
+}
+.headerCalc #switch2:checked ~ .buttonElement {
+  left: 27px;
+}
+.headerCalc #switch3:checked ~ .buttonElement {
+  left: 44px;
+}
+
+.containerResults {
+  margin-top: 30px;
+  background-color: #181f33;
+  padding: 30px;
+  text-align: right;
+  color: #FFF;
+  border-radius: 16px;
+  min-height: 120px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.containerResults .currentResults {
+  font-size: 48px;
+  font-weight: 700;
+}
+.containerResults .currentResults span {
+  word-break: break-word;
+}
+
+.containerOperations {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 17px;
+  background-color: #242d44;
+  padding: 20px 15px;
+  border-radius: 16px;
+}
+@media (width >= 768px) {
+  .containerOperations {
+    padding: 30px;
+    gap: 24px;
+    padding: 30px;
+  }
+}
+.containerOperations .element,
+.containerOperations .equal,
+.containerOperations .del,
+.containerOperations .reset {
+  height: 60px;
+  background: #EAE3DC;
+  box-shadow: inset 0px -4px 0px #B3A497;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #434A59;
+  font-weight: 700;
+  font-size: 30px;
+  transition: all 0.2s;
+}
+@media (width >= 768px) {
+  .containerOperations .element,
+  .containerOperations .equal,
+  .containerOperations .del,
+  .containerOperations .reset {
+    font-size: 40px;
+    height: 65px;
+  }
+}
+.containerOperations .element:hover,
+.containerOperations .equal:hover,
+.containerOperations .del:hover,
+.containerOperations .reset:hover {
+  background-color: #FFFFFE;
+}
+.containerOperations .element:active,
+.containerOperations .equal:active,
+.containerOperations .del:active,
+.containerOperations .reset:active {
+  transform: translateY(2px);
+}
+.containerOperations .del,
+.containerOperations .reset {
+  background-color: #647198;
+  box-shadow: inset 0px -4px 0px #414E73;
+  color: white;
+  font-size: 19px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+@media (width >= 768px) {
+  .containerOperations .del,
+  .containerOperations .reset {
+    font-size: 25px;
+  }
+}
+.containerOperations .del:hover {
+  background-color: #A2B2E1;
+}
+.containerOperations .reset {
+  grid-column: 1/span 2;
+}
+.containerOperations .reset:hover {
+  background-color: #A2B2E1;
+}
+.containerOperations .equal {
+  grid-column: 3/span 2;
+  background-color: #d03f2f;
+  box-shadow: inset 0px -4px 0px #93261A;
+  color: white;
+}
+.containerOperations .equal:active {
+  background-color: #F96B5B;
+}
+.containerOperations .equal:hover {
+  background-color: #F96B5B;
+}
+
+.themeTwo {
+  background-color: #e6e6e6;
+}
+
+.themeTwo .headerCalc h1,
+.themeTwo .headerCalc .nameTheme,
+.themeTwo .headerCalc .toggleThemeNumbers {
+  color: #000;
+}
+
+.themeTwo .containerInputs,
+.themeTwo .containerOperations {
+  background-color: #D2CDCD;
+}
+
+.themeTwo .containerResults {
+  background-color: #eeeeee;
+  color: #36362C;
+}
+
+.themeTwo .element {
+  background-color: #e5e4e1;
+  box-shadow: inset 0px -4px 0px #a79e91;
+}
+.themeTwo .element:hover {
+  background-color: #FFFFFF;
+}
+
+.themeTwo .del,
+.themeTwo .reset {
+  background-color: #378187;
+  box-shadow: inset 0px -4px 0px #1b6066;
+}
+.themeTwo .del:hover,
+.themeTwo .reset:hover {
+  background-color: #62B5BC;
+}
+
+.themeTwo .equal {
+  background-color: #c85402;
+  box-shadow: inset 0px -4px 0px #873901;
+}
+.themeTwo .equal:hover {
+  background-color: #FF8A38;
+}
+
+.themeThree {
+  background-color: #17062a;
+}
+
+.themeThree .headerCalc h1,
+.themeThree .headerCalc .nameTheme,
+.themeThree .headerCalc .toggleThemeNumbers {
+  color: #ffe53d;
+}
+
+.themeThree .buttonElement {
+  background-color: #93FFF8;
+}
+
+.themeThree .containerInputs,
+.themeThree .containerOperations {
+  background-color: #1e0936;
+}
+
+.themeThree .containerResults {
+  background-color: #1e0936;
+  color: #ffe53d;
+}
+
+.themeThree .element {
+  background-color: #331c4d;
+  box-shadow: inset 0px -4px 0px #881c9e;
+  color: #ffe53d;
+}
+.themeThree .element:hover {
+  background-color: #6C34AC;
+}
+
+.themeThree .del,
+.themeThree .reset {
+  background-color: #58077d;
+  box-shadow: inset 0px -4px 0px #bc15f4;
+}
+.themeThree .del:hover,
+.themeThree .reset:hover {
+  background-color: #7b0baf;
+}
+
+.themeThree .equal {
+  background-color: #00e0d1;
+  box-shadow: inset 0px -4px 0px #6cf9f2;
+}
+.themeThree .equal:hover {
+  background-color: #00ffee;
+}
+
+/*# sourceMappingURL=app.css.map */
