@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .buttonAddToCart {
+        @apply text-brown-primary h-[51px] bg-[#FCF9F7] relative bottom-7 py-3 rounded-3xl flex items-center justify-center gap-4 border-[1px] border-rose-950 mx-auto w-[10.5rem] duration-300  hover:border-[#CD5E43];
+    }
+
+    .buttonCounterProduct {
+        @apply bg-[#C73A0F] h-[51px] py-3 px-8 rounded-3xl relative bottom-20 duration-300 flex items-center justify-between mx-auto w-[10.5rem];
+    }
+}
+
+body {
+    background-color: #F4EDEB;
+    font-family: "Red Hat Text", system-ui;
+}
+
+#root {
+    max-width: 1216px;
+    margin: 70px auto;
+    padding: 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    @media (width >= 640px) {
+        flex-direction: row;
+    }
+}
