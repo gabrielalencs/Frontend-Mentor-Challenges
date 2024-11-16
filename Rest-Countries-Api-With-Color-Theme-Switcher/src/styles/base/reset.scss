@@ -39,6 +39,17 @@ main {
     overflow: hidden;
 }
 
+.hideCountryDetailsContainer {
+    transform: translateY(10rem);
+    opacity: 0;
+}
+
+.showCountryDetailsContainer {
+    transform: translateY(0);
+    opacity: 100;
+}
+
+
 .container {
     max-width: 121.6rem;
     margin: auto;

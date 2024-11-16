@@ -12,7 +12,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
 
 
-const CountrySearch = ({ setSearchCountry, setFilterByRegion }) => {
+const CountrySearch = ({ setSearchCountry, filterByRegion, setFilterByRegion }) => {
 
     const [isDropdownRegion, setIsDropdownRegion] = useState(false);
     const listRegions = ['All', 'Africa', 'Americas', 'Asia', 'Europe', 'Oceania'];
@@ -42,7 +42,7 @@ const CountrySearch = ({ setSearchCountry, setFilterByRegion }) => {
 
             <div className='selectRegionContainer' onClick={toggleSelectRegion}>
                 <div className='selectRegion'>
-                    <span>Filter by Region</span>
+                    <span>{filterByRegion == 'All' ? 'Filter by Region' : filterByRegion}</span>
                     <IoIosArrowDown />
                 </div>
 

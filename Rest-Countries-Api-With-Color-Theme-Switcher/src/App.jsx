@@ -36,6 +36,7 @@ const App = () => {
                             <>
                                 <CountrySearch
                                     setSearchCountry={setSearchCountries}
+                                    filterByRegion={filterByRegion}
                                     setFilterByRegion={setFilterByRegion}
                                 />
                                 <ListCountries

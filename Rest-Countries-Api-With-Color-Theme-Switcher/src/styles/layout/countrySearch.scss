@@ -165,3 +165,14 @@
     background-color: #FFFFFF;
     color: #2B3945;
 }
+
+.light-mode .selectRegionOptions  {
+    background-color: #ffffff !important;
+    color: #2B3945 !important;
+
+    li {
+        &:hover {
+            background-color: #d8d8d8 !important;
+        }
+    }
+}

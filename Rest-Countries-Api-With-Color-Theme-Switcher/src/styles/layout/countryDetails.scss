@@ -1,13 +1,3 @@
-.hideCountryDetailsContainer {
-    transform: translateY(10rem);
-    opacity: 0;
-}
-
-.showCountryDetailsContainer {
-    transform: translateY(0);
-    opacity: 100;
-}
-
 .countryDetailsContainer {
     transition: all .5s;
     max-width: 135rem;
