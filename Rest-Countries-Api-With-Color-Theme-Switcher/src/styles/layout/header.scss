@@ -1,0 +1,54 @@
+.header {
+    background-color: #2B3945;
+    color: #fff;
+    box-shadow: 0 2px 8px 0 rgba(99, 99, 99, .2);
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3rem;
+    }
+
+    &Brand {
+        font-size: 1.7rem;
+        font-weight: bold;
+
+        @media (width >= 768px) {
+            font-size: 2rem;
+        }
+
+        @media (width >= 1920px) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &ContainerDarkmode {
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        cursor: pointer;
+
+        @media (width >= 1920px) {
+            font-size: 2rem;
+        }
+
+        svg {
+            font-size: 1.7rem;
+
+            @media (width >=768px) {
+                font-size: 1.9rem;
+            }
+
+            @media (width >= 1920px) {
+                font-size: 2.4rem;
+            }
+        }
+    }
+}
+
+.light-mode .header {
+    background-color: #fff;
+    color: #000;
+}

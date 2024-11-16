@@ -1,0 +1,167 @@
+.countrySearchContainer {
+    margin-top: 6rem;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    @media (width >=768px) {
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .searchInput {
+        width: 100%;
+        border: none;
+        background-color: #2B3945;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        padding: 1.5rem 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 7px 29px 0 rgba(100, 100, 111, .2);
+
+        @media (width >=768px) {
+            width: 40%;
+        }
+
+        input {
+            width: 100%;
+            background-color: #2B3945;
+            border: none;
+            color: #fff;
+            font-size: 1.5rem;
+            appearance: none;
+
+            &::-webkit-search-decoration,
+            &::-webkit-search-cancel-button,
+            &::-webkit-search-results-button,
+            &::-webkit-search-results-decoration {
+                display: none;
+            }
+
+            &::placeholder {
+                color: #e4e4e4;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        svg {
+            font-size: 2.5rem;
+            color: #fff;
+        }
+    }
+
+    .selectRegionContainer {
+        background-color: #364755;
+        padding: 1.6rem 3rem;
+        border-radius: 1rem;
+        color: #fff;
+        font-size: 1.6rem;
+        width: max-content;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0 7px 29px 0 rgba(100, 100, 111, .2);
+
+        .selectRegion {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            svg {
+                font-size: 2rem;
+            }
+        }
+
+        .selectRegionOptions {
+            position: absolute;
+            left: 0;
+            top: 6.5rem;
+            border-radius: 1rem;
+            background-color: #364755;
+            width: 21.2rem;
+            z-index: 100;
+            transition: all .3s;
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar {
+                width: 15px;
+            }
+        
+            &::-webkit-scrollbar-track {
+                background-color: transparent;
+            }
+        
+            &::-webkit-scrollbar-thumb {
+                background-color: transparent;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+            }
+
+            ul li:first-child  {
+                border-radius: 1rem 1rem 0 0;
+                padding: 1.5rem 2rem 1rem;
+            }
+
+            ul li:last-child {
+                border-radius: 0 0 1rem 1rem;
+                padding: 1rem 2rem 1.5rem;
+            }
+
+            li {
+                transition: all .3s;
+                padding: 1rem 2rem;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: rgb(60, 74, 87)
+                }
+            }
+        }
+
+        .showSelectRegion {
+            height: 26.2rem;
+            overflow: visible;
+            transition: all .3s;
+            opacity: 100;
+        }
+
+        .hiddenSelectRegion {
+            height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: all .3s;
+        }
+    }
+}
+
+.light-mode .searchInput {
+    background-color: #FFFFFF;
+    color: #2B3945;
+
+    input {
+        background-color: transparent;
+        color: #2B3945;
+
+        &::placeholder {
+            color: #2B3945;
+        }
+    }
+
+    svg {
+        color: #2B3945;
+    }
+}
+
+.light-mode .selectRegionContainer {
+    background-color: #FFFFFF;
+    color: #2B3945;
+}
