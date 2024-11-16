@@ -2,6 +2,7 @@
   "name": "rest-countries-api-with-color-theme-switcher",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://where-in-the-world-challenge.netlify.app/",
   "type": "module",
   "scripts": {
     "dev": "vite",
