@@ -1,50 +1,52 @@
-# React + TypeScript + Vite
+# Frontend Mentor - Age Calculator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+  
+![projeto](https://github.com/user-attachments/assets/98e49971-2d5c-40bb-9094-fb1d19fe0459)
+</div>
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+**Esse repositório é destinado as minhas soluções dos desafios da plataforma FrontEnd Mentor**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Olá, Seja Bem Vindo! 👋
 
-- Configure the top-level `parserOptions` property like this:
+**Obrigado por conferir essa solução para esse desafio!!!** 
+<br>
+Vamos conferir de forma geral esse projeto.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Sobre o Desafio 🎯
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+O desafio é construir esta página e deixá-la o mais parecida possível com o design.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Os usuários devem ser capazes de:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- Ver o layout ideal da interface dependendo do tamanho da tela do dispositivo
+- Ver os estados de foco para todos os elementos interativos da página
+- Ver o seu calculo de vida, anos, meses e dias vividos
+- Visualizar mensagens de erro nos campos caso não preencha
+- Visualizar mensagens de erro nos campos caso coloque datas inválidas (-1, 77, 2099 e etc);=
+
+## Layout 🎨
+
+É possível visualizar todos os layouts (mobile e desktop) na pasta da aplicação ` ./assets/design ` .
+
+## Tecnologias e Conceitos Utilizados 💻
+
+- React.js
+- TypeScript
+- Tailwind CSS
+- Vite
+
+##  Buscando Evolução 🚀
+
+Esse foi o meu primeiro projeto prático usando o TypeScript. Então foi bem desafiador, estou me adaptando a forma de programar usando essa tecnologia. 
+Fiquei muito feliz com o resultado afinal, e consegui desenvolver tudo que tinha em mente. Me sinto mais preparado para um próximo projeto com TypeScript.
+
+
+## Deploy 🔥
+ 
+Para realizar o deploy da minha aplicação, utilizei o **Netlify**
+<br>
+<a href="https://main-age-calculator.netlify.app/">Clique Aqui </a> para visualizar a aplicação.
+
