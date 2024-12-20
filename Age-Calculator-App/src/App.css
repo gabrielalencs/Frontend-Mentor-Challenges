@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .date {
+    @apply text-[#716f6f] text-sm font-semibold uppercase tracking-[.2rem] max-[400px]:text-xs;
+  }
+
+  .inputDate {
+    @apply border-[1px] border-[#dbdbdb] rounded-lg w-full max-w-32 py-3 px-4 text-xl font-bold placeholder:text-[#716f6f] focus:outline-[#854dff] md:text-3xl;
+  }
+
+  .dataNumber {
+    @apply max-[400px]:text-5xl text-6xl font-bold text-[#854dff] md:text-8xl italic;
+  }
+
+  .dataText {
+    @apply max-[400px]:text-4xl text-5xl font-extrabold md:text-7xl italic;
+  }
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: "Poppins", serif;
+  overflow-x: hidden;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#root {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rounded-bottom {
+  border-radius: 1.5rem 1.5rem 10rem 1.5rem;
+}
