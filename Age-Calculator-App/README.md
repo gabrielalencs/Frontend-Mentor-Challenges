@@ -25,7 +25,7 @@ Os usuários devem ser capazes de:
 - Ver os estados de foco para todos os elementos interativos da página
 - Ver o seu calculo de vida, anos, meses e dias vividos
 - Visualizar mensagens de erro nos campos caso não preencha
-- Visualizar mensagens de erro nos campos caso coloque datas inválidas (-1, 77, 2099 e etc);=
+- Visualizar mensagens de erro nos campos caso coloque datas inválidas (-1, 77, 2099 e etc) 
 
 ## Layout 🎨
 
