@@ -25,7 +25,6 @@ const App = () => {
     const [month, setMonth] = useState<string>("");
     const [year, setYear] = useState<string>("");
 
-    const [birthdayDate, setBirthdayDate] = useState<BirthdayDate | null>(null);
     const [errors, setErrors] = useState<{ [key: string]: string } | null>(null);
 
     const [animDays, setAnimDays] = useState<number | null>(null);
@@ -50,17 +49,16 @@ const App = () => {
     const handleButtonSubmit = () => {
         setErrors({});
 
-        const birthdayDateNumbers: BirthdayDate = {
+        const birthdayDate: BirthdayDate = {
             day: Number(day),
             month: Number(month),
             year: Number(year)
         };
 
-        const errorsMessages: { [key: string]: string } = validateFields(birthdayDateNumbers);
+        const errorsMessages: { [key: string]: string } = validateFields(birthdayDate);
 
         if (Object.keys(errorsMessages).length == 0) {
-            setBirthdayDate(birthdayDateNumbers);
-            calculateAge(birthdayDateNumbers);
+            calculateAge(birthdayDate);
 
             return;
         }
@@ -99,7 +97,6 @@ const App = () => {
             }
         }, interval);
     };
-
 
     const calculateAge = (birthdayDate: BirthdayDate) => {
         const currentDate = new Date();
