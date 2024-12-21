@@ -32,7 +32,7 @@ const App = () => {
     const [animMonths, setAnimMonths] = useState<number | null>(null);
     const [animYears, setAnimYears] = useState<number | null>(null);
 
-    
+
     const handleInputDate = (
         event: ChangeEvent<HTMLInputElement>,
         numberLimit: number,
@@ -70,24 +70,37 @@ const App = () => {
     };
 
     const animateNumbers = (finalYears: number, finalMonths: number, finalDays: number) => {
+        const duration = 2000; // Duração total da animação em milissegundos (2 segundos)
+        const interval = 50; // Intervalo entre as atualizações (50ms)
+        const steps = duration / interval; // Número total de passos na animação
+
+        const yearIncrement = Math.ceil(finalYears / steps); // Incremento por passo para anos
+        const monthIncrement = Math.ceil(finalMonths / steps); // Incremento por passo para meses
+        const dayIncrement = Math.ceil(finalDays / steps); // Incremento por passo para dias
+
         let countYears = 0;
         let countMonths = 0;
         let countDays = 0;
 
-        const interval = setInterval(() => {
-            countYears = Math.min(countYears + 1, finalYears);
-            countMonths = Math.min(countMonths + 1, finalMonths);
-            countDays = Math.min(countDays + 1, finalDays);
+        const animation = setInterval(() => {
+            countYears = Math.min(countYears + yearIncrement, finalYears);
+            countMonths = Math.min(countMonths + monthIncrement, finalMonths);
+            countDays = Math.min(countDays + dayIncrement, finalDays);
 
             setAnimYears(countYears);
             setAnimMonths(countMonths);
             setAnimDays(countDays);
 
-            if (countYears === finalYears && countMonths === finalMonths && countDays === finalDays) {
-                clearInterval(interval);
+            if (
+                countYears === finalYears &&
+                countMonths === finalMonths &&
+                countDays === finalDays
+            ) {
+                clearInterval(animation);
             }
-        }, 50);
+        }, interval);
     };
+
 
     const calculateAge = () => {
         if (birthdayDate) {
