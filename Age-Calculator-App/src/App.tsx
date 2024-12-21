@@ -60,8 +60,7 @@ const App = () => {
 
         if (Object.keys(errorsMessages).length == 0) {
             setBirthdayDate(birthdayDateNumbers);
-
-            calculateAge();
+            calculateAge(birthdayDateNumbers);
 
             return;
         }
@@ -70,13 +69,13 @@ const App = () => {
     };
 
     const animateNumbers = (finalYears: number, finalMonths: number, finalDays: number) => {
-        const duration = 2000; // Duração total da animação em milissegundos (2 segundos)
-        const interval = 50; // Intervalo entre as atualizações (50ms)
-        const steps = duration / interval; // Número total de passos na animação
+        const duration = 1500; 
+        const interval = 50; 
+        const steps = duration / interval; 
 
-        const yearIncrement = Math.ceil(finalYears / steps); // Incremento por passo para anos
-        const monthIncrement = Math.ceil(finalMonths / steps); // Incremento por passo para meses
-        const dayIncrement = Math.ceil(finalDays / steps); // Incremento por passo para dias
+        const yearIncrement = Math.ceil(finalYears / steps); 
+        const monthIncrement = Math.ceil(finalMonths / steps); 
+        const dayIncrement = Math.ceil(finalDays / steps);
 
         let countYears = 0;
         let countMonths = 0;
@@ -102,35 +101,27 @@ const App = () => {
     };
 
 
-    const calculateAge = () => {
-        if (birthdayDate) {
-            const currentDate = new Date();
-            const birthDate = new Date(birthdayDate.year, birthdayDate.month - 1, birthdayDate.day);
+    const calculateAge = (birthdayDate: BirthdayDate) => {
+        const currentDate = new Date();
+        const birthDate = new Date(birthdayDate.year, birthdayDate.month - 1, birthdayDate.day);
 
-            let years = currentDate.getFullYear() - birthDate.getFullYear();
-            let months = currentDate.getMonth() - birthDate.getMonth();
-            let days = currentDate.getDate() - birthDate.getDate();
+        let years = currentDate.getFullYear() - birthDate.getFullYear();
+        let months = currentDate.getMonth() - birthDate.getMonth();
+        let days = currentDate.getDate() - birthDate.getDate();
 
-            if (days < 0) {
-                months -= 1;
-                const previousMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(), 0);
-                days += previousMonth.getDate();
-            }
-
-            if (months < 0) {
-                years -= 1;
-                months += 12;
-            }
-
-            animateNumbers(years, months, days);
+        if (days < 0) {
+            months -= 1;
+            const previousMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(), 0);
+            days += previousMonth.getDate();
         }
+
+        if (months < 0) {
+            years -= 1;
+            months += 12;
+        }
+
+        animateNumbers(years, months, days);
     };
-
-    useEffect(() => {
-        if (birthdayDate) {
-            calculateAge();
-        }
-    }, [birthdayDate]);
 
 
     return (
