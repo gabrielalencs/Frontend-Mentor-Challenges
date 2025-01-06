@@ -34,19 +34,26 @@ const ListCountries = ({ countrySearched, filterByRegion, setSearchCountries, se
 
     useEffect(() => {
         const getListCountries = async () => {
-            setLoadingCountries(true);
-
-            const response = await fetch("https://restcountries.com/v3.1/all");
-            const data = await response.json();
-
-            setLoadingCountries(false);
-            setCountries(data);
+            try {
+                setLoadingCountries(true);
+    
+                const response = await fetch("https://restcountries.com/v3.1/all");
+                if (!response.ok) {
+                    alert(`HTTP error! Status: ${response.status}`);
+                }
+                const data = await response.json();
+    
+                setCountries(data);
+            } catch (error) {
+                alert("Error fetching countries:", error);
+            } finally {
+                setLoadingCountries(false);
+            }
         };
-
+    
         getListCountries();
-
     }, []);
-
+    
 
     const applyFilters = () => {
         return countries.filter(country => {
@@ -60,8 +67,7 @@ const ListCountries = ({ countrySearched, filterByRegion, setSearchCountries, se
                 ? country.region.includes(filterByRegion)
                 : true;
 
-            if (filterByRegion == 'All') matchesRegion = countries;
-
+            if (filterByRegion === 'All') matchesRegion = true;
 
             return matchesSearch && matchesRegion;
         });
