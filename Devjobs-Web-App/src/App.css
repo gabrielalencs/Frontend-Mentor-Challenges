@@ -1,0 +1,201 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer components {
+    .paragraphStyles {
+        @apply text-[#6e8098] leading-[26px] block;
+    }
+
+    .hide {
+        @apply !opacity-0 !z-[-10];
+    }
+
+    .show {
+        @apply !opacity-100 z-30;
+    }
+}
+
+body {
+    background-color: #F4F6F8;
+    font-family: "Kumbh Sans", serif;
+    transition: background-color .3s;
+    overflow-x: hidden;
+}
+
+.dark body {
+    background-color: #121721;
+}
+
+
+/* Header - Button Dark Mode */
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+}
+
+.toggle-switch .toggle-input {
+    display: none;
+}
+
+.toggle-switch .toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 24px;
+    background-color: #FFFFFF;
+    border-radius: 34px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-switch .toggle-label::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 5px;
+    left: 4px;
+    background-color: #5964E0;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.toggle-switch .toggle-input:checked+.toggle-label::before {
+    transform: translateX(25px);
+}
+
+
+.toggle-switch.light .toggle-label {
+    background-color: #BEBEBE;
+}
+
+.toggle-switch.light .toggle-input:checked+.toggle-label {
+    background-color: #9B9B9B;
+}
+
+.toggle-switch.light .toggle-input:checked+.toggle-label::before {
+    transform: translateX(6px);
+}
+
+
+.toggle-switch.dark .toggle-label {
+    background-color: #4B4B4B;
+}
+
+.toggle-switch.dark .toggle-input:checked+.toggle-label {
+    background-color: #717171;
+}
+
+.toggle-switch.dark .toggle-input:checked+.toggle-label::before {
+    transform: translateX(16px);
+}
+
+
+/* Search Bar - Input Checkbox */
+
+.checkbox-wrapper input[type="checkbox"] {
+    display: none;
+    visibility: hidden;
+}
+
+.checkbox-wrapper .cbx {
+    margin: auto;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.checkbox-wrapper .cbx span {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translate3d(0, 0, 0);
+}
+
+.checkbox-wrapper .cbx span:first-child {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+    transform: scale(1);
+    vertical-align: middle;
+    background-color: #e7e8e9;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background-color: #D5D8F7;
+    }
+}
+
+.dark .checkbox-wrapper .cbx span:first-child {
+    background-color: #313743;
+
+    &:hover {
+        background-color: #575e6b;
+    }
+}
+
+.checkbox-wrapper .cbx span:first-child svg {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 3px;
+    left: 3px;
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 16px;
+    stroke-dashoffset: 16px;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+    transform: translate3d(0, 0, 0);
+}
+
+.checkbox-wrapper .cbx span:last-child {
+    padding-left: 15px;
+    font-weight: 500;
+}
+
+.checkbox-wrapper .cbx:hover span:first-child {
+    border-color: #506eec;
+}
+
+.checkbox-wrapper .inp-cbx:checked+.cbx span:first-child {
+    background: #506eec;
+    border-color: #506eec;
+    animation: wave 0.4s ease;
+}
+
+.checkbox-wrapper .inp-cbx:checked+.cbx span:first-child svg {
+    stroke-dashoffset: 0;
+}
+
+.checkbox-wrapper .inp-cbx:checked+.cbx span:first-child:before {
+    transform: scale(3.5);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+@keyframes wave {
+    50% {
+        transform: scale(0.9);
+    }
+}
+
+.fade-enter {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
