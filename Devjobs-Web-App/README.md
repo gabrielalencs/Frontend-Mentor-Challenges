@@ -1,50 +1,45 @@
-# React + TypeScript + Vite
+# Frontend Mentor - Devjobs Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+  
+![print-project](https://github.com/user-attachments/assets/be7bdc59-ad3f-485b-ad4b-0adab3928e50)
+</div>
 
-Currently, two official plugins are available:
+**Esse repositório é destinado as minhas soluções dos desafios da plataforma FrontEnd Mentor**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Olá, Seja Bem Vindo! 👋
 
-## Expanding the ESLint configuration
+**Obrigado por conferir essa solução para esse desafio!!!** 
+<br>
+Vamos conferir de forma geral esse projeto.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Sobre o Desafio 🎯
 
-- Configure the top-level `parserOptions` property like this:
+O desafio é construir esta página e deixá-la o mais parecida possível com o design.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Os usuários devem ser capazes de:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- Ver o layout ideal da interface dependendo do tamanho da tela do dispositivo
+- Ver os estados de foco para todos os elementos interativos da página
+- Alternar em modo claro e escuro
+- Filtrar pelos trabalhos que deseja (descrição da vaga, localização e carga hóraria)
+- Visualizar página de mais informações da vaga desejada
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Tecnologias e Conceitos Utilizados 💻
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- React.js
+- TypeScript
+- Tailwind CSS
+- Zustand
+- Vite
+
+##  Buscando Evolução 🚀
+
+O objetivo desse projeto era aprimorar meus conhecimentos em TypeScript e praticar o gerenciador de estados Zustand que estudei sobre.
+Consegui entender bem melhor de forma prática como essa lib para estados funciona e me sinto bem mais preparados para futuros projetos utilizando ela.
+
+## Deploy 🔥
+ 
+Para realizar o deploy da minha aplicação, utilizei o **Netlify**
+<br>
+<a href="https://main-devjobs-web-app.netlify.app/">Clique Aqui </a> para visualizar a aplicação.
