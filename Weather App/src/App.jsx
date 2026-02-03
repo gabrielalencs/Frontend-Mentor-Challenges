@@ -1,5 +1,6 @@
 import CurrentWeatherCard from './components/CurrentWeatherCard'
 import Header from './components/Header'
+import HourlyForecastPanel from './components/HourlyForecastPanel'
 import MetricsRow from './components/MetricsRow'
 import SearchPlace from './components/SearchPlace'
 
@@ -14,6 +15,7 @@ function App() {
                         <CurrentWeatherCard />
                         <MetricsRow />
                     </div>
+                    <HourlyForecastPanel />
                 </div>
             </main>
         </>

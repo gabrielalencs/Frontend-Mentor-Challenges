@@ -10,7 +10,7 @@ const CurrentWeatherCard = () => {
                 "--bg-large": `url(${BgTodayLarge})`,
             }}
             className="
-                bg-[image:var(--bg-small)] lg:bg-[image:var(--bg-large)]
+                bg-(image:--bg-small) lg:bg-(image:--bg-large)
                 bg-no-repeat bg-cover bg-center
                 rounded-2xl p-10
                 text-white
