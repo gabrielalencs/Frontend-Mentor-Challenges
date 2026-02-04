@@ -1,4 +1,5 @@
 import SearchIcon from '../../assets/images/icon-search.svg'
+import RetryIcon from '../../assets/images/icon-retry.svg';
 import { useEffect, useRef, useState } from 'react';
 import { searchPlaces, fetchForecast } from '../../service/openMeteo.js';
 
@@ -77,7 +78,7 @@ const SearchPlace = ({ onResult }) => {
         console.log(place, data);
         
     };
-console.log(query);
+
 
     return (
         <section className='mt-8'>
@@ -106,8 +107,9 @@ console.log(query);
                     {open && (
                         <div className="absolute left-0 right-0 mt-2 bg-[#272541] border border-[#312f4b] rounded-lg shadow-lg max-h-72 overflow-auto z-50">
                             {loadingPlaces && (
-                                <div className="px-4 py-3 text-sm text-[#aeaeb7]">
-                                    Searching...
+                                <div className="px-4 py-3 text-sm text-white flex items-center gap-3 ">
+                                    <img src={RetryIcon} alt="" className='animate-spin' />
+                                    Search in progress
                                 </div>
                             )}
 
