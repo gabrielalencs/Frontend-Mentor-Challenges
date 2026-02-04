@@ -10,9 +10,11 @@ const Header = () => {
         setShowUnits(prev => !prev);
     };
 
+    
+
 
     return (
-        <header className='flex items-center justify-between p-6 md:py-8 md:px-10 relative'>
+        <header className='max-w-354 mx-auto flex items-center justify-between p-6 md:py-8 md:px-10 relative'>
             <div>
                 <img src={Logo} alt='Logo Weather Now' />
             </div>

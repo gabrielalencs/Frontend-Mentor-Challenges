@@ -15,7 +15,9 @@ function App() {
                         <CurrentWeatherCard />
                         <MetricsRow />
                     </div>
-                    <HourlyForecastPanel />
+                    <div className='mt-10'>
+                        <HourlyForecastPanel />
+                    </div>
                 </div>
             </main>
         </>
