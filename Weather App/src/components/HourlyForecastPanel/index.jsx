@@ -59,9 +59,9 @@ const HourlyForecastPanel = () => {
             </div>
 
             <div className='mt-7'>
-                <div className='flex items-center justify-between gap-2 rounded-lg bg-[#312F4B] inset-ring inset-ring-[#3D3B5E] py-2.5 pr-4 pl-3 text-white'>
+                <div className='flex items-center justify-between gap-2 rounded-lg bg-[#312F4B] inset-ring inset-ring-[#3D3B5E] py-1 pr-5 pl-3 text-white'>
                     <div className='flex items-center gap-2'>
-                        <img src={OvercastIcon} alt='Icon de Nuvem' className='w-16 lg:w-20' />
+                        <img src={OvercastIcon} alt='Icon de Nuvem' className='w-16' />
                         <span className='text-white font-medium text-xl'>9 PM</span>
                     </div>
                     <div>

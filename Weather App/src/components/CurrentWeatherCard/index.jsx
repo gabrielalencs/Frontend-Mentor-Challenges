@@ -23,7 +23,7 @@ const CurrentWeatherCard = () => {
                 <span className="mt-2 inline-block text-zinc-200 text-md md:text-lg">Tuesday, Aug 5, 2025</span>
             </div>
 
-            <div className="flex items-center justify-center gap-8 mt-3">
+            <div className="flex items-center justify-center gap-8 lg:gap-1 mt-3">
                 <img
                     src={SunnyIcon}
                     alt="Icone de Sol"
