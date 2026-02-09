@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import CurrentWeatherCard from "./components/CurrentWeatherCard";
 import DailyForecastList from "./components/DailyForecastList";
@@ -6,9 +6,37 @@ import Header from "./components/Header";
 import HourlyForecastPanel from "./components/HourlyForecastPanel";
 import MetricsRow from "./components/MetricsRow";
 import SearchPlace from "./components/SearchPlace";
+import { fetchForecast, searchPlaces } from "./service/openMeteo";
 
 function App() {
     const [weather, setWeather] = useState(null);
+
+
+    useEffect(() => {
+        const fetchBerlin = async () => {
+            const data = await fetchForecast({
+                latitude: 52.52437,
+                longitude: 13.41053,
+                units: {
+                    temperature_unit: 'celsius',
+                    wind_speed_unit: 'kmh',
+                    precipitation_unit: 'mm',
+                },
+            });
+
+            const results = await searchPlaces('Berlin', 3);
+            const place = results[0];
+
+            setWeather({ place, data });
+        }
+
+        fetchBerlin();
+    }, []);
+    
+
+    console.log(weather);
+    
+
 
     return (
         <>

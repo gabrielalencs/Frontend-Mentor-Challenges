@@ -2,7 +2,13 @@ import SunnyIcon from "../../assets/images/icon-sunny.webp";
 import BgTodaySmall from "../../assets/images/bg-today-small.svg";
 import BgTodayLarge from "../../assets/images/bg-today-large.svg";
 
-const CurrentWeatherCard = () => {
+const CurrentWeatherCard = ({ place, current, units }) => {
+    /* console.log(place, current, units); */
+
+    /* console.log(place); */
+    
+    
+
     return (
         <section
             style={{
@@ -19,7 +25,7 @@ const CurrentWeatherCard = () => {
             "
         >
             <div>
-                <h3 className="font-bold text-3xl md:text-4xl">Berlin, Germany</h3>
+                <h3 className="font-bold text-3xl md:text-4xl">{place?.admin1}, {place?.country}</h3>
                 <span className="mt-2 inline-block text-zinc-200 text-md md:text-lg">Tuesday, Aug 5, 2025</span>
             </div>
 

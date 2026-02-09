@@ -14,6 +14,7 @@ const SearchPlace = ({ onResult }) => {
     const [selectedPlace, setSelectedPlace] = useState(null);
     const [open, setOpen] = useState(false);
     const [loadingPlaces, setLoadingPlaces] = useState(false);
+    
 
     const wrapperRef = useRef(null);
 
@@ -52,6 +53,7 @@ const SearchPlace = ({ onResult }) => {
         return () => clearTimeout(t);
     }, [query]);
 
+
     const handleSelectPlace = (place) => {
         setSelectedPlace(place);
         setQuery(`${place.name}, ${place.country} (${place.country_code})`);
@@ -75,8 +77,6 @@ const SearchPlace = ({ onResult }) => {
         });
 
         onResult?.({ place, data });
-        console.log(place, data);
-        
     };
 
 

@@ -58,7 +58,6 @@ export async function fetchForecast({
         timezone: "auto",
         forecast_days: "7",
 
-        // O que sua UI precisa
         current: [
             "temperature_2m",
             "apparent_temperature",
@@ -79,7 +78,6 @@ export async function fetchForecast({
             "temperature_2m_min",
         ].join(","),
 
-        // Unidades (conforme seu dropdown)
         temperature_unit: units.temperature_unit,
         wind_speed_unit: units.wind_speed_unit,
         precipitation_unit: units.precipitation_unit,
