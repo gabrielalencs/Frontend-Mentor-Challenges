@@ -11,12 +11,11 @@ import { fetchForecast, searchPlaces } from "./service/openMeteo";
 function App() {
     const [weather, setWeather] = useState(null);
 
-
     useEffect(() => {
         const fetchBerlin = async () => {
             const data = await fetchForecast({
-                latitude: 52.52437,
-                longitude: 13.41053,
+                latitude: 52.52,
+                longitude: 13.419998,
                 units: {
                     temperature_unit: 'celsius',
                     wind_speed_unit: 'kmh',
@@ -24,7 +23,7 @@ function App() {
                 },
             });
 
-            const results = await searchPlaces('Berlin', 3);
+            const results = await searchPlaces('Berlim', 3);
             const place = results[0];
 
             setWeather({ place, data });
@@ -33,11 +32,6 @@ function App() {
         fetchBerlin();
     }, []);
     
-
-    console.log(weather);
-    
-
-
     return (
         <>
             <Header />
