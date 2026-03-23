@@ -45,6 +45,7 @@ function App() {
                             place={weather?.place}
                             current={weather?.data?.current}
                             units={weather?.data?.current_units}
+                            data={weather?.data}
                         />
 
                         <MetricsRow
